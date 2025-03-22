@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Metro Runner - Urban Adventure Game | PlayGamesEveryday</title>
+    <meta name="description" content="Play Metro Runner online for free - an exciting urban adventure game set in a subway system. Navigate through trains and tunnels in this thrilling game!">
+    <link rel="canonical" href="https://playgameseveryday.online/games/metro">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHP9EM7S29"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WHP9EM7S29');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#0071e3',
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            black: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .game-container {
+            aspect-ratio: 16/9;
+            max-height: 80vh;
+        }
+    </style>
+</head>
+<body class="bg-white text-apple-black">
+    <!-- Header -->
+    <header class="bg-apple-gray py-6 sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-semibold">PlayGamesEveryday</a>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/" class="hover:text-apple-blue transition py-2">Home</a>
+                    
+                    <!-- 分类下拉菜单 -->
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-apple-blue transition py-2">
+                            Categories
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+                            <div class="py-1">
+                                <a href="/categories/action.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Action Games</a>
+                                <a href="/categories/adventure.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Adventure Games</a>
+                                <a href="/categories/strategy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Strategy Games</a>
+                                <a href="/categories/casual.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Casual Games</a>
+                                <a href="/categories/multiplayer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Multiplayer Games</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/games" class="hover:text-apple-blue transition py-2">All Games</a>
+                    <a href="/about" class="hover:text-apple-blue transition py-2">About</a>
+                    <a href="/contact" class="hover:text-apple-blue transition py-2">Contact</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button class="md:hidden mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+            
+            <!-- 移动端菜单 -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-2">
+                <a href="/" class="block py-2 hover:text-apple-blue transition">Home</a>
+                <div class="mobile-submenu">
+                    <button class="flex items-center justify-between w-full py-2 hover:text-apple-blue transition">
+                        Categories
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mobile-submenu-content hidden pl-4 border-l-2 border-apple-gray mt-1">
+                        <a href="/categories/action.html" class="block py-2 hover:text-apple-blue transition">Action Games</a>
+                        <a href="/categories/adventure.html" class="block py-2 hover:text-apple-blue transition">Adventure Games</a>
+                        <a href="/categories/strategy.html" class="block py-2 hover:text-apple-blue transition">Strategy Games</a>
+                        <a href="/categories/casual.html" class="block py-2 hover:text-apple-blue transition">Casual Games</a>
+                        <a href="/categories/multiplayer.html" class="block py-2 hover:text-apple-blue transition">Multiplayer Games</a>
+                    </div>
+                </div>
+                <a href="/games" class="block py-2 hover:text-apple-blue transition">All Games</a>
+                <a href="/about" class="block py-2 hover:text-apple-blue transition">About</a>
+                <a href="/contact" class="block py-2 hover:text-apple-blue transition">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 游戏标题和介绍 -->
+        <section class="text-center mb-8">
+            <div class="max-w-5xl mx-auto mb-4">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="/" class="text-apple-darkgray hover:text-apple-blue transition">Home</a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-apple-darkgray" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                <a href="/games" class="ml-1 text-apple-darkgray hover:text-apple-blue transition">Games</a>
+                            </div>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-apple-darkgray" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="ml-1 text-apple-blue font-medium">Metro Runner</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Metro Runner</h1>
+            <p class="text-xl text-apple-darkgray max-w-3xl mx-auto">An exciting urban adventure set in a subway system. Navigate through trains and tunnels in this thrilling game!</p>
+        </section>
+
+        <!-- 游戏分类和信息 -->
+        <section class="mb-6 max-w-5xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                <a href="/categories/action.html" class="bg-apple-gray text-sm px-3 py-1 rounded hover:bg-apple-blue hover:text-white transition">Action</a>
+                <a href="/categories/adventure.html" class="bg-apple-gray text-sm px-3 py-1 rounded hover:bg-apple-blue hover:text-white transition">Adventure</a>
+                <span class="bg-apple-gray text-sm px-3 py-1 rounded">Runner</span>
+            </div>
+            <div class="flex justify-center items-center text-apple-darkgray text-sm">
+                <span class="flex items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    5-10 min per run
+                </span>
+                <span class="flex items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Single Player
+                </span>
+                <span class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    Easy to Medium
+                </span>
+            </div>
+        </section>
+
+        <!-- 游戏Iframe -->
+        <section class="mb-12">
+            <div class="bg-apple-gray rounded-xl p-4 shadow-lg max-w-5xl mx-auto">
+                <div class="game-container w-full relative overflow-hidden rounded-lg">
+                    <iframe src="https://hihowareyou.vercel.app/games/metro.html" frameborder="0" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="fullscreen-btn" class="bg-apple-blue hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full transition">Fullscreen Mode</button>
+            </div>
+        </section>
+
+        <!-- 游戏描述 -->
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">About Metro Runner</h2>
+            <p class="mb-6 text-lg">Metro Runner is an exciting endless runner game set in the urban environment of a busy subway system. As a daring runner, you'll navigate through trains, tunnels, and stations while avoiding obstacles and collecting power-ups.</p>
+            <p class="mb-6 text-lg">With its fast-paced gameplay and increasing difficulty, Metro Runner offers an adrenaline-pumping experience that will test your reflexes and timing. How far can you run before the subway catches up to you?</p>
+            
+            <h2 class="text-2xl font-bold mb-4 mt-8">How to Play</h2>
+            <p class="mb-6">Swipe left, right, up, or down to navigate through the subway environment. Avoid obstacles like barriers, oncoming trains, and gaps in the track. Collect coins and power-ups to increase your score and gain special abilities that will help you survive longer!</p>
+            
+            <div class="bg-apple-gray p-6 rounded-xl mb-8">
+                <h3 class="font-bold mb-2">Controls:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <li class="flex items-center"><span class="font-semibold mr-2">Swipe Up:</span> Jump</li>
+                    <li class="flex items-center"><span class="font-semibold mr-2">Swipe Down:</span> Roll/Slide</li>
+                    <li class="flex items-center"><span class="font-semibold mr-2">Swipe Left/Right:</span> Change lanes</li>
+                    <li class="flex items-center"><span class="font-semibold mr-2">Double Tap:</span> Use power-up</li>
+                </ul>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-4 mt-8">Game Features</h2>
+            <ul class="list-disc pl-6 mb-6 space-y-2">
+                <li>Endless runner gameplay</li>
+                <li>Urban subway environment</li>
+                <li>Multiple characters to unlock</li>
+                <li>Various power-ups and abilities</li>
+                <li>Coin collection system</li>
+                <li>Daily challenges and missions</li>
+                <li>Global leaderboards</li>
+                <li>Play directly in your browser - no downloads needed</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold mb-4 mt-8">Tips and Strategies</h2>
+            <p class="mb-3">Improve your Metro Runner skills with these helpful tips:</p>
+            <ul class="list-disc pl-6 mb-6 space-y-1">
+                <li>Focus on the path ahead to anticipate obstacles</li>
+                <li>Save power-ups for difficult sections</li>
+                <li>Prioritize collecting coins in safe areas</li>
+                <li>Learn the timing for jumps and slides</li>
+                <li>Complete daily missions to earn bonus rewards</li>
+                <li>Practice makes perfect - each run helps you improve</li>
+            </ul>
+            
+            <div class="bg-apple-gray p-6 rounded-xl mt-8">
+                <h2 class="text-2xl font-bold mb-4">Why Play Metro Runner?</h2>
+                <p class="mb-4">Metro Runner offers quick, exciting gameplay sessions that are perfect for when you have a few minutes to spare. With its simple controls but challenging gameplay, it's easy to pick up but difficult to master. The urban subway setting provides a unique and visually interesting environment that keeps the game fresh and engaging run after run!</p>
+            </div>
+        </section>
+        
+        <!-- 相关游戏 -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold mb-6">Similar Games You Might Enjoy</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- 相关游戏卡片 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/smc.html">
+                        <div class="bg-apple-gray h-40 flex items-center justify-center">
+                            <span class="text-apple-darkgray">SMC Game</span>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-bold">Super Mario Clone</h3>
+                            <span class="text-sm text-apple-darkgray">Adventure, Platform</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/fruit.html">
+                        <div class="bg-apple-gray h-40 flex items-center justify-center">
+                            <span class="text-apple-darkgray">Fruit Game</span>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-bold">Fruit Game</h3>
+                            <span class="text-sm text-apple-darkgray">Puzzle, Casual</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/blackout.html">
+                        <div class="bg-apple-gray h-40 flex items-center justify-center">
+                            <span class="text-apple-darkgray">Blackout</span>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-bold">Blackout</h3>
+                            <span class="text-sm text-apple-darkgray">Action, Battle Royale</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-apple-black text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">PlayGamesEveryday</h3>
+                    <p class="text-apple-darkgray max-w-md">Your destination for free online games that you can play anytime, anywhere, without downloads or installations.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/games" class="text-apple-darkgray hover:text-white transition">More Games</a></li>
+                        <li><a href="/privacy" class="text-apple-darkgray hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-apple-darkgray hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="/contact" class="text-apple-darkgray hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-apple-darkgray">
+                <p>&copy; 2023 PlayGamesEveryday.online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+        
+        // 移动端子菜单切换
+        document.querySelector('.mobile-submenu button').addEventListener('click', function() {
+            document.querySelector('.mobile-submenu-content').classList.toggle('hidden');
+        });
+        
+        // 全屏模式
+        document.getElementById('fullscreen-btn').addEventListener('click', function() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        });
+    </script>
+</body>
+</html> 
