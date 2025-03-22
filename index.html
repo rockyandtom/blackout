@@ -44,68 +44,258 @@
 </head>
 <body class="bg-white text-apple-black">
     <!-- Header -->
-    <header class="bg-apple-gray py-6">
+    <header class="bg-apple-gray py-6 sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center">
                 <a href="/" class="text-2xl font-semibold">PlayGamesEveryday</a>
-                <div class="hidden md:flex space-x-6">
-                    <a href="/" class="hover:text-apple-blue transition">Home</a>
-                    <a href="/games" class="hover:text-apple-blue transition">Games</a>
-                    <a href="/about" class="hover:text-apple-blue transition">About</a>
-                    <a href="/contact" class="hover:text-apple-blue transition">Contact</a>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/" class="hover:text-apple-blue transition py-2">Home</a>
+                    
+                    <!-- 分类下拉菜单 -->
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-apple-blue transition py-2">
+                            Categories
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+                            <div class="py-1">
+                                <a href="/categories/action.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Action Games</a>
+                                <a href="/categories/adventure.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Adventure Games</a>
+                                <a href="/categories/strategy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Strategy Games</a>
+                                <a href="/categories/casual.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Casual Games</a>
+                                <a href="/categories/multiplayer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Multiplayer Games</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/games" class="hover:text-apple-blue transition py-2">All Games</a>
+                    <a href="/about" class="hover:text-apple-blue transition py-2">About</a>
+                    <a href="/contact" class="hover:text-apple-blue transition py-2">Contact</a>
                 </div>
-                <button class="md:hidden">
+                
+                <!-- 移动端菜单按钮 -->
+                <button class="md:hidden mobile-menu-button">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </nav>
+            
+            <!-- 移动端菜单 -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-2">
+                <a href="/" class="block py-2 hover:text-apple-blue transition">Home</a>
+                <div class="mobile-submenu">
+                    <button class="flex items-center justify-between w-full py-2 hover:text-apple-blue transition">
+                        Categories
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mobile-submenu-content hidden pl-4 border-l-2 border-apple-gray mt-1">
+                        <a href="/categories/action.html" class="block py-2 hover:text-apple-blue transition">Action Games</a>
+                        <a href="/categories/adventure.html" class="block py-2 hover:text-apple-blue transition">Adventure Games</a>
+                        <a href="/categories/strategy.html" class="block py-2 hover:text-apple-blue transition">Strategy Games</a>
+                        <a href="/categories/casual.html" class="block py-2 hover:text-apple-blue transition">Casual Games</a>
+                        <a href="/categories/multiplayer.html" class="block py-2 hover:text-apple-blue transition">Multiplayer Games</a>
+                    </div>
+                </div>
+                <a href="/games" class="block py-2 hover:text-apple-blue transition">All Games</a>
+                <a href="/about" class="block py-2 hover:text-apple-blue transition">About</a>
+                <a href="/contact" class="block py-2 hover:text-apple-blue transition">Contact</a>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
-        <!-- Game Title and Introduction -->
-        <section class="text-center mb-8">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Blackout</h1>
-            <p class="text-xl text-apple-darkgray max-w-3xl mx-auto">Experience the thrill of survival in this fast-paced battle royale game where only the strongest will prevail.</p>
-        </section>
-
-        <!-- Game Iframe -->
-        <section class="mb-12">
-            <div class="bg-apple-gray rounded-xl p-4 shadow-lg max-w-5xl mx-auto">
-                <div class="game-container w-full relative overflow-hidden rounded-lg">
-                    <iframe src="https://blackoutgames.netlify.app/start.html" frameborder="0" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+        <!-- 英雄区域 -->
+        <section class="bg-apple-gray rounded-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Play Games Every Day</h1>
+                    <p class="text-xl text-apple-darkgray mb-6">Your destination for free online games that you can play anytime, anywhere, without downloads or installations.</p>
+                    <a href="/games" class="bg-apple-blue hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition inline-block">Browse All Games</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/assets/images/ui/hero-image.jpg" alt="Play Games Every Day" class="rounded-lg shadow-lg w-full">
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <button class="bg-apple-blue hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full transition">Fullscreen Mode</button>
+        </section>
+        
+        <!-- 精选游戏 -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold">精选游戏</h2>
+                <a href="/games" class="text-apple-blue hover:underline">查看全部</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Blackout 游戏卡片 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/blackout.html">
+                        <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Blackout" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Blackout</h3>
+                            <p class="text-apple-darkgray mb-3">Experience the thrill of survival in this fast-paced battle royale game.</p>
+                            <div class="flex items-center">
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded mr-2">Action</span>
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Multiplayer</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Fruit Game 游戏卡片 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/fruit.html">
+                        <div class="bg-apple-gray h-48 flex items-center justify-center">
+                            <span class="text-xl font-bold">Fruit Game</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Fruit Game</h3>
+                            <p class="text-apple-darkgray mb-3">A colorful and addictive puzzle game with juicy graphics and challenging levels.</p>
+                            <div class="flex items-center">
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded mr-2">Puzzle</span>
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Casual</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Super Mario Clone 游戏卡片 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/smc.html">
+                        <div class="bg-apple-gray h-48 flex items-center justify-center">
+                            <span class="text-xl font-bold">Super Mario Clone</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Super Mario Clone</h3>
+                            <p class="text-apple-darkgray mb-3">A nostalgic platform adventure inspired by the classic. Jump, run, and collect coins!</p>
+                            <div class="flex items-center">
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded mr-2">Adventure</span>
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Platform</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Metro Runner 游戏卡片 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/metro.html">
+                        <div class="bg-apple-gray h-48 flex items-center justify-center">
+                            <span class="text-xl font-bold">Metro Runner</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Metro Runner</h3>
+                            <p class="text-apple-darkgray mb-3">An exciting urban adventure set in a subway system. Navigate through trains and tunnels!</p>
+                            <div class="flex items-center">
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded mr-2">Action</span>
+                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Runner</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
-
-        <!-- Game Description -->
-        <section class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 border-b pb-2">About Blackout</h2>
-            <p class="mb-6 text-lg">Blackout is an exciting online battle royale game that combines strategic gameplay with fast-paced action. Inspired by popular titles like Fortnite, Blackout offers its own unique twist on the genre, providing players with an immersive gaming experience directly in their browser.</p>
-            
-            <h2 class="text-2xl font-bold mb-4 mt-8">How to Play</h2>
-            <p class="mb-6">Jump into the action immediately with no downloads required. Use your keyboard and mouse to navigate the game world, collect resources, and eliminate opponents. The last player standing wins the match!</p>
-            
-            <h2 class="text-2xl font-bold mb-4 mt-8">Game Features</h2>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Intense battle royale gameplay</li>
-                <li>Multiple maps and environments</li>
-                <li>Various weapons and items to discover</li>
-                <li>Strategic building mechanics</li>
-                <li>Regular updates with new content</li>
-            </ul>
-            
-            <h2 class="text-2xl font-bold mb-4 mt-8">System Requirements</h2>
-            <p class="mb-6">Blackout is designed to run smoothly on most devices with an internet connection. For the best experience, we recommend using a modern browser like Chrome, Firefox, or Safari.</p>
-            
-            <div class="bg-apple-gray p-6 rounded-xl mt-8">
-                <h2 class="text-2xl font-bold mb-4">Why Play Blackout?</h2>
-                <p class="mb-4">Blackout offers the perfect blend of accessibility and depth. Whether you have five minutes or five hours, you can jump in and enjoy competitive gameplay without any complicated setup. Challenge yourself, improve your skills, and become the ultimate survivor!</p>
+        
+        <!-- 游戏分类 -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">Game Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <a href="/categories/action.html" class="bg-apple-gray rounded-lg p-6 text-center hover:bg-apple-blue hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <h3 class="font-bold">Action</h3>
+                </a>
+                <a href="/categories/adventure.html" class="bg-apple-gray rounded-lg p-6 text-center hover:bg-apple-blue hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="font-bold">Adventure</h3>
+                </a>
+                <a href="/categories/strategy.html" class="bg-apple-gray rounded-lg p-6 text-center hover:bg-apple-blue hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    <h3 class="font-bold">Strategy</h3>
+                </a>
+                <a href="/categories/casual.html" class="bg-apple-gray rounded-lg p-6 text-center hover:bg-apple-blue hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="font-bold">Casual</h3>
+                </a>
+                <a href="/categories/multiplayer.html" class="bg-apple-gray rounded-lg p-6 text-center hover:bg-apple-blue hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <h3 class="font-bold">Multiplayer</h3>
+                </a>
+            </div>
+        </section>
+        
+        <!-- 最新游戏 -->
+        <section>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold">Latest Games</h2>
+                <a href="/games" class="text-apple-blue hover:underline">View All</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Metro Runner -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/metro.html">
+                        <div class="bg-apple-gray h-36 flex items-center justify-center">
+                            <span class="text-apple-darkgray">Metro Runner</span>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-bold">Metro Runner</h3>
+                            <span class="text-sm text-apple-darkgray">Action, Runner</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Super Mario Clone -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/smc.html">
+                        <div class="bg-apple-gray h-36 flex items-center justify-center">
+                            <span class="text-apple-darkgray">Super Mario Clone</span>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-bold">Super Mario Clone</h3>
+                            <span class="text-sm text-apple-darkgray">Adventure, Platform</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Fruit Game -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/fruit.html">
+                        <div class="bg-apple-gray h-36 flex items-center justify-center">
+                            <span class="text-apple-darkgray">Fruit Game</span>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-bold">Fruit Game</h3>
+                            <span class="text-sm text-apple-darkgray">Puzzle, Casual</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Blackout -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                    <a href="/games/blackout.html">
+                        <div class="bg-apple-gray h-36 flex items-center justify-center">
+                            <span class="text-apple-darkgray">Blackout</span>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-bold">Blackout</h3>
+                            <span class="text-sm text-apple-darkgray">Action, Battle Royale</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -145,6 +335,16 @@
             } else if (iframe.msRequestFullscreen) {
                 iframe.msRequestFullscreen();
             }
+        });
+
+        // 移动端菜单切换
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+        
+        // 移动端子菜单切换
+        document.querySelector('.mobile-submenu button').addEventListener('click', function() {
+            document.querySelector('.mobile-submenu-content').classList.toggle('hidden');
         });
     </script>
 </body>
