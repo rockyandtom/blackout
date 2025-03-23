@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play 太空探险 - Free Online Game | PlayGamesEveryday</title>
+    <meta name="description" content="Play 太空探险 online for free - 探索未知宇宙，与外星文明交流，在这款刺激的太空探险游戏中成为伟大的宇航员。. No downloads required!">
+    <link rel="canonical" href="https://playgameseveryday.online/games/space-adventure">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHP9EM7S29"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WHP9EM7S29');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#0071e3',
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            black: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .game-container {
+            aspect-ratio: 16/9;
+            max-height: 80vh;
+        }
+    </style>
+</head>
+<body class="bg-white text-apple-black">
+    <!-- Header -->
+    <header class="bg-apple-gray py-6 sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-semibold">PlayGamesEveryday</a>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/" class="hover:text-apple-blue transition py-2">Home</a>
+                    
+                    <!-- 分类下拉菜单 -->
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-apple-blue transition py-2">
+                            Categories
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+                            <div class="py-1">
+                                <a href="/categories/action.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Action Games</a>
+                                <a href="/categories/adventure.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Adventure Games</a>
+                                <a href="/categories/strategy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Strategy Games</a>
+                                <a href="/categories/casual.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Casual Games</a>
+                                <a href="/categories/multiplayer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Multiplayer Games</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/games" class="hover:text-apple-blue transition py-2">All Games</a>
+                    <a href="/about" class="hover:text-apple-blue transition py-2">About</a>
+                    <a href="/contact" class="hover:text-apple-blue transition py-2">Contact</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button class="md:hidden mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+            
+            <!-- 移动端菜单 -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-2">
+                <a href="/" class="block py-2 hover:text-apple-blue transition">Home</a>
+                <div class="mobile-submenu">
+                    <button class="flex items-center justify-between w-full py-2 hover:text-apple-blue transition">
+                        Categories
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mobile-submenu-content hidden pl-4 border-l-2 border-apple-gray mt-1">
+                        <a href="/categories/action.html" class="block py-2 hover:text-apple-blue transition">Action Games</a>
+                        <a href="/categories/adventure.html" class="block py-2 hover:text-apple-blue transition">Adventure Games</a>
+                        <a href="/categories/strategy.html" class="block py-2 hover:text-apple-blue transition">Strategy Games</a>
+                        <a href="/categories/casual.html" class="block py-2 hover:text-apple-blue transition">Casual Games</a>
+                        <a href="/categories/multiplayer.html" class="block py-2 hover:text-apple-blue transition">Multiplayer Games</a>
+                    </div>
+                </div>
+                <a href="/games" class="block py-2 hover:text-apple-blue transition">All Games</a>
+                <a href="/about" class="block py-2 hover:text-apple-blue transition">About</a>
+                <a href="/contact" class="block py-2 hover:text-apple-blue transition">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 游戏标题和介绍 -->
+        <section class="text-center mb-8">
+            <div class="max-w-5xl mx-auto mb-4">
+                <nav class="flex" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="/" class="text-apple-darkgray hover:text-apple-blue transition">Home</a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-apple-darkgray" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                <a href="/games" class="ml-1 text-apple-darkgray hover:text-apple-blue transition">Games</a>
+                            </div>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-apple-darkgray" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="ml-1 text-apple-blue font-medium">太空探险</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">太空探险</h1>
+            <p class="text-xl text-apple-darkgray max-w-3xl mx-auto">探索未知宇宙，与外星文明交流，在这款刺激的太空探险游戏中成为伟大的宇航员。</p>
+        </section>
+
+        <!-- 游戏分类和信息 -->
+        <section class="mb-6 max-w-5xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                <a href="/categories/adventure.html" class="bg-apple-gray text-sm px-3 py-1 rounded hover:bg-apple-blue hover:text-white transition">Adventure</a>
+<a href="/categories/strategy.html" class="bg-apple-gray text-sm px-3 py-1 rounded hover:bg-apple-blue hover:text-white transition">Strategy</a>
+
+            </div>
+            <div class="flex justify-center items-center text-apple-darkgray text-sm">
+                <span class="flex items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    10-30 min per session
+                </span>
+                <span class="flex items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Single Player
+                </span>
+                <span class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    Medium
+                </span>
+            </div>
+        </section>
+
+        <!-- 游戏Iframe -->
+        <section class="mb-12">
+            <div class="bg-apple-gray rounded-xl p-4 shadow-lg max-w-5xl mx-auto">
+                <div class="game-container w-full relative overflow-hidden rounded-lg">
+                    <iframe src="https://example.com/games/space-adventure" frameborder="0" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="fullscreen-btn" class="bg-apple-blue hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full transition">Fullscreen Mode</button>
+            </div>
+        </section>
+
+        <!-- 游戏描述 -->
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">About 太空探险</h2>
+            <p class="mb-6 text-lg">《太空探险》是一款令人兴奋的太空探索游戏，玩家将踏上探索未知宇宙的旅程，发现新的行星和文明。游戏结合了探索、资源管理和战略决策，为玩家提供了沉浸式的太空冒险体验。</p><p class="mb-6 text-lg">在游戏中，玩家将扮演一名勇敢的宇航员，驾驶飞船穿越星系，探索异星，与外星文明互动，收集稀有资源，并解开宇宙中的各种谜团。每个星球都有其独特的环境、生物和挑战，需要玩家运用不同的策略和工具来应对。</p>
+            
+            <h2 class="text-2xl font-bold mb-4 mt-8">How to Play</h2>
+            <p class="mb-6">使用键盘和鼠标控制您的宇航员和飞船。探索星球，收集资源，解决谜题，与外星生物交流。您需要管理氧气和燃料等资源，确保能够安全返回基地。游戏目标是探索尽可能多的星球并解开宇宙的秘密。</p>
+            
+            <div class="bg-apple-gray p-6 rounded-xl mb-8">
+                <h3 class="font-bold mb-2">Controls:</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <li class="flex items-center"><span class="font-semibold mr-2">WASD:</span> 移动宇航员</li>
+<li class="flex items-center"><span class="font-semibold mr-2">Space:</span> 跳跃</li>
+<li class="flex items-center"><span class="font-semibold mr-2">E:</span> 交互/收集</li>
+<li class="flex items-center"><span class="font-semibold mr-2">1-5:</span> 切换工具</li>
+<li class="flex items-center"><span class="font-semibold mr-2">F:</span> 开启手电筒</li>
+<li class="flex items-center"><span class="font-semibold mr-2">M:</span> 查看地图</li>
+
+                </ul>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-4 mt-8">Game Features</h2>
+            <ul class="list-disc pl-6 mb-6 space-y-2">
+                <li>探索超过20个独特的外星球</li>
+<li>与各种外星文明互动</li>
+<li>收集和利用稀有太空资源</li>
+<li>升级您的宇航服和装备</li>
+<li>解开宇宙起源的秘密</li>
+<li>逼真的太空环境和物理效果</li>
+<li>丰富的故事情节和支线任务</li>
+
+            </ul>
+            
+            
+<h2 class="text-2xl font-bold mb-4 mt-8">太空探险小贴士</h2>
+<p class="mb-3">以下是一些帮助您成为成功的宇航员的建议:</p><ul class="list-disc pl-6 mb-6 space-y-1"><li>始终监控氧气和燃料水平</li><li>首先探索资源丰富的行星</li><li>与友好的外星种族建立贸易关系</li><li>记录并分析发现的新物种</li><li>在危险环境中使用防护装备</li><li>定期返回基地补充物资</li></ul>
+
+<h2 class="text-2xl font-bold mb-4 mt-8">背景故事</h2>
+<p class="mb-6">2157年，人类首次接收到来自深空的神秘信号。这一发现引发了一场全球性的太空探索热潮。作为新一代宇航员培训计划的一部分，你被选中驾驶最先进的探索飞船前往信号源所在的星系。</p><p class="mb-6">当你抵达目的地时，你发现这里不仅有一个，而是有多个外星文明存在。有些友好，有些充满敌意。更令人惊讶的是，他们似乎都在寻找同一样东西——一种能够解开宇宙起源秘密的远古神器。</p><p class="mb-6">你的使命已经从简单的探索变成了一场跨越星系的寻宝之旅。你能在竞争对手之前找到这件神器吗？而更重要的是，一旦找到，你会如何使用它的力量？</p>
+
+            
+            <div class="bg-apple-gray p-6 rounded-xl mt-8">
+                <h2 class="text-2xl font-bold mb-4">Why Play 太空探险?</h2>
+                <p class="mb-4">《太空探险》将带您进入一个充满未知和奇迹的宇宙。凭借其独特的探索机制、引人入胜的故事情节和精美的视觉效果，这款游戏为太空探索爱好者提供了一次难忘的冒险。无论您是喜欢解谜、收集资源还是享受宏大叙事，这款游戏都能满足您的需求。</p>
+            </div>
+        </section>
+        
+        <!-- 相关游戏 -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold mb-6">Similar Games You Might Enjoy</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+    <a href="/games/starwanderer.html">
+        <div class="game-thumbnail h-36" data-game-name="星际漫游">
+            <img src="/assets/images/games/starwanderer-thumbnail.jpg" alt="星际漫游" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+            <h3 class="font-bold">星际漫游</h3>
+            <span class="text-sm text-apple-darkgray">Adventure, Sci-Fi</span>
+        </div>
+    </a>
+</div>
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+    <a href="/games/galaxy-commander.html">
+        <div class="game-thumbnail h-36" data-game-name="银河指挥官">
+            <img src="/assets/images/games/galaxy-commander-thumbnail.jpg" alt="银河指挥官" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+            <h3 class="font-bold">银河指挥官</h3>
+            <span class="text-sm text-apple-darkgray">Strategy, Simulation</span>
+        </div>
+    </a>
+</div>
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+    <a href="/games/alien-explorer.html">
+        <div class="game-thumbnail h-36" data-game-name="外星探索者">
+            <img src="/assets/images/games/alien-explorer-thumbnail.jpg" alt="外星探索者" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+            <h3 class="font-bold">外星探索者</h3>
+            <span class="text-sm text-apple-darkgray">Adventure, Action</span>
+        </div>
+    </a>
+</div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-apple-black text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">PlayGamesEveryday</h3>
+                    <p class="text-apple-darkgray max-w-md">Your destination for free online games that you can play anytime, anywhere, without downloads or installations.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/games" class="text-apple-darkgray hover:text-white transition">More Games</a></li>
+                        <li><a href="/privacy" class="text-apple-darkgray hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-apple-darkgray hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="/contact" class="text-apple-darkgray hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-apple-darkgray">
+                <p>&copy; 2023 PlayGamesEveryday.online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+        
+        // 移动端子菜单切换
+        document.querySelector('.mobile-submenu button').addEventListener('click', function() {
+            document.querySelector('.mobile-submenu-content').classList.toggle('hidden');
+        });
+        
+        // 全屏模式
+        document.getElementById('fullscreen-btn').addEventListener('click', function() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        });
+    </script>
+</body>
+</html> 
