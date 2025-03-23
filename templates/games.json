@@ -1,0 +1,514 @@
+[
+  {
+    "name": "太空探险",
+    "slug": "space-adventure",
+    "description_short": "探索未知宇宙，与外星文明交流，在这款刺激的太空探险游戏中成为伟大的宇航员。",
+    "description_full": "<p class=\"mb-6 text-lg\">《太空探险》是一款令人兴奋的太空探索游戏，玩家将踏上探索未知宇宙的旅程，发现新的行星和文明。游戏结合了探索、资源管理和战略决策，为玩家提供了沉浸式的太空冒险体验。</p><p class=\"mb-6 text-lg\">在游戏中，玩家将扮演一名勇敢的宇航员，驾驶飞船穿越星系，探索异星，与外星文明互动，收集稀有资源，并解开宇宙中的各种谜团。每个星球都有其独特的环境、生物和挑战，需要玩家运用不同的策略和工具来应对。</p>",
+    "iframe_url": "https://example.com/games/space-adventure",
+    "thumbnail": "/assets/images/games/space-adventure-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Adventure",
+        "url": "/categories/adventure.html"
+      },
+      {
+        "name": "Strategy",
+        "url": "/categories/strategy.html"
+      }
+    ],
+    "duration": "10-30 min per session",
+    "player_type": "Single Player",
+    "difficulty": "Medium",
+    "how_to_play": "使用键盘和鼠标控制您的宇航员和飞船。探索星球，收集资源，解决谜题，与外星生物交流。您需要管理氧气和燃料等资源，确保能够安全返回基地。游戏目标是探索尽可能多的星球并解开宇宙的秘密。",
+    "controls": [
+      {
+        "key": "WASD",
+        "action": "移动宇航员"
+      },
+      {
+        "key": "Space",
+        "action": "跳跃"
+      },
+      {
+        "key": "E",
+        "action": "交互/收集"
+      },
+      {
+        "key": "1-5",
+        "action": "切换工具"
+      },
+      {
+        "key": "F",
+        "action": "开启手电筒"
+      },
+      {
+        "key": "M",
+        "action": "查看地图"
+      }
+    ],
+    "features": [
+      "探索超过20个独特的外星球",
+      "与各种外星文明互动",
+      "收集和利用稀有太空资源",
+      "升级您的宇航服和装备",
+      "解开宇宙起源的秘密",
+      "逼真的太空环境和物理效果",
+      "丰富的故事情节和支线任务"
+    ],
+    "extra_sections": {
+      "tips": {
+        "title": "太空探险小贴士",
+        "content": "<p class=\"mb-3\">以下是一些帮助您成为成功的宇航员的建议:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>始终监控氧气和燃料水平</li><li>首先探索资源丰富的行星</li><li>与友好的外星种族建立贸易关系</li><li>记录并分析发现的新物种</li><li>在危险环境中使用防护装备</li><li>定期返回基地补充物资</li></ul>"
+      },
+      "story": {
+        "title": "背景故事",
+        "content": "<p class=\"mb-6\">2157年，人类首次接收到来自深空的神秘信号。这一发现引发了一场全球性的太空探索热潮。作为新一代宇航员培训计划的一部分，你被选中驾驶最先进的探索飞船前往信号源所在的星系。</p><p class=\"mb-6\">当你抵达目的地时，你发现这里不仅有一个，而是有多个外星文明存在。有些友好，有些充满敌意。更令人惊讶的是，他们似乎都在寻找同一样东西——一种能够解开宇宙起源秘密的远古神器。</p><p class=\"mb-6\">你的使命已经从简单的探索变成了一场跨越星系的寻宝之旅。你能在竞争对手之前找到这件神器吗？而更重要的是，一旦找到，你会如何使用它的力量？</p>"
+      }
+    },
+    "why_play": "《太空探险》将带您进入一个充满未知和奇迹的宇宙。凭借其独特的探索机制、引人入胜的故事情节和精美的视觉效果，这款游戏为太空探索爱好者提供了一次难忘的冒险。无论您是喜欢解谜、收集资源还是享受宏大叙事，这款游戏都能满足您的需求。",
+    "similar_games": [
+      {
+        "name": "星际漫游",
+        "slug": "starwanderer",
+        "thumbnail": "/assets/images/games/starwanderer-thumbnail.jpg",
+        "categories": "Adventure, Sci-Fi"
+      },
+      {
+        "name": "银河指挥官",
+        "slug": "galaxy-commander",
+        "thumbnail": "/assets/images/games/galaxy-commander-thumbnail.jpg",
+        "categories": "Strategy, Simulation"
+      },
+      {
+        "name": "外星探索者",
+        "slug": "alien-explorer",
+        "thumbnail": "/assets/images/games/alien-explorer-thumbnail.jpg",
+        "categories": "Adventure, Action"
+      }
+    ]
+  },
+  {
+    "name": "忍者武士",
+    "slug": "ninja-warrior",
+    "description_short": "成为传奇忍者，掌握武术技能，在这款动作丰富的平台游戏中挑战各种敌人和关卡。",
+    "description_full": "<p class=\"mb-6 text-lg\">《忍者武士》是一款充满动作元素的平台游戏，玩家将扮演一名技艺高超的忍者，穿越古代日本的各种环境，对抗敌人，完成任务。游戏融合了传统忍者元素和现代游戏机制，为玩家提供刺激的体验。</p><p class=\"mb-6 text-lg\">在游戏中，玩家需要利用忍者的敏捷性和各种武器技能，克服陷阱，打败敌人，完成每个关卡设定的目标。随着游戏的进行，玩家可以解锁新的技能和装备，提升自己的战斗能力，应对越来越具有挑战性的关卡。</p>",
+    "iframe_url": "https://example.com/games/ninja-warrior",
+    "thumbnail": "/assets/images/games/ninja-warrior-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Action",
+        "url": "/categories/action.html"
+      },
+      {
+        "name": "Platform",
+        "url": "/categories/platform.html"
+      }
+    ],
+    "duration": "5-15 min per level",
+    "player_type": "Single Player",
+    "difficulty": "Medium to Hard",
+    "how_to_play": "使用键盘控制忍者的移动和攻击。完成每个关卡的目标，可能是击败所有敌人、收集特定物品或到达特定地点。注意避开陷阱，有效利用隐蔽点，并灵活运用各种忍者技能。随着游戏的进行，你将解锁更多高级技能和武器。",
+    "controls": [
+      {
+        "key": "方向键/WASD",
+        "action": "移动"
+      },
+      {
+        "key": "Space",
+        "action": "跳跃"
+      },
+      {
+        "key": "J",
+        "action": "普通攻击"
+      },
+      {
+        "key": "K",
+        "action": "特殊攻击"
+      },
+      {
+        "key": "L",
+        "action": "使用道具"
+      },
+      {
+        "key": "Shift",
+        "action": "冲刺"
+      },
+      {
+        "key": "Ctrl",
+        "action": "隐身模式"
+      }
+    ],
+    "features": [
+      "30个具有挑战性的关卡",
+      "多种忍者武器和技能",
+      "逼真的物理效果和动画",
+      "精美的古代日本风格场景",
+      "丰富的敌人类型和Boss战",
+      "技能升级系统",
+      "隐藏收集品和彩蛋"
+    ],
+    "extra_sections": {
+      "tips": {
+        "title": "忍者秘籍",
+        "content": "<p class=\"mb-3\">成为一名成功的忍者武士需要技巧和耐心:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>利用隐身技能避开强大的敌人</li><li>收集所有卷轴以解锁隐藏技能</li><li>注意环境线索，寻找隐藏通道</li><li>使用墙跳技巧到达高处</li><li>保存特殊攻击能量用于Boss战</li><li>学习每种敌人的攻击模式</li></ul>"
+      },
+      "skills": {
+        "title": "忍者技能树",
+        "content": "<p class=\"mb-6\">《忍者武士》提供了丰富的技能升级系统:</p><div class=\"bg-apple-gray p-4 rounded-lg mb-4\"><h4 class=\"font-bold mb-2\">武器技能</h4><ul class=\"list-disc pl-6\"><li>手里剑投掷</li><li>双刀技术</li><li>链镰技术</li></ul></div><div class=\"bg-apple-gray p-4 rounded-lg mb-4\"><h4 class=\"font-bold mb-2\">移动技能</h4><ul class=\"list-disc pl-6\"><li>墙壁奔跑</li><li>二段跳</li><li>高速冲刺</li></ul></div><div class=\"bg-apple-gray p-4 rounded-lg\"><h4 class=\"font-bold mb-2\">忍术</h4><ul class=\"list-disc pl-6\"><li>影分身术</li><li>替身术</li><li>火遁忍术</li></ul></div>"
+      }
+    },
+    "why_play": "《忍者武士》将传统忍者元素与现代游戏玩法完美融合，为动作游戏爱好者提供极具挑战性的体验。精美的画面、流畅的动作和丰富的技能系统让每一关都充满新鲜感。如果你喜欢动作平台游戏并向往成为一名真正的忍者大师，这款游戏绝对不容错过。",
+    "similar_games": [
+      {
+        "name": "武士之道",
+        "slug": "way-of-samurai",
+        "thumbnail": "/assets/images/games/way-of-samurai-thumbnail.jpg",
+        "categories": "Action, Adventure"
+      },
+      {
+        "name": "暗影刺客",
+        "slug": "shadow-assassin",
+        "thumbnail": "/assets/images/games/shadow-assassin-thumbnail.jpg",
+        "categories": "Action, Stealth"
+      },
+      {
+        "name": "跳跃忍者",
+        "slug": "jump-ninja",
+        "thumbnail": "/assets/images/games/jump-ninja-thumbnail.jpg",
+        "categories": "Platform, Casual"
+      }
+    ]
+  },
+  {
+    "name": "Celeste",
+    "slug": "celeste",
+    "description_short": "一款充满挑战性的像素风平台游戏，讲述了Madeline攀登Celeste山并克服自身焦虑的感人故事。",
+    "description_full": "<p class=\"mb-6 text-lg\">《Celeste》是一款由Maddy Makes Games开发的备受赞誉的平台游戏。游戏讲述了一个名叫Madeline的年轻女性尝试攀登Celeste山的故事，在攀登过程中，她必须面对自己的焦虑和抑郁。</p><p class=\"mb-6 text-lg\">游戏以其精确的操作系统、具有挑战性但公平的关卡设计以及感人至深的叙事而闻名。玩家需要掌握各种技巧，包括空中冲刺、墙壁跳跃和其他高级移动技术，以帮助Madeline攀登这座充满危险的山峰。</p><p class=\"mb-6 text-lg\">除了基础游戏外，还有隐藏的B面和C面关卡，为寻求更高挑战的玩家提供额外内容。每个关卡都有可收集的草莓和卡带，鼓励探索和重玩。</p>",
+    "iframe_url": "https://blackoutgames.netlify.app/games/celeste.html",
+    "thumbnail": "/assets/images/games/celeste-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Platform",
+        "url": "/categories/platform.html"
+      },
+      {
+        "name": "Adventure",
+        "url": "/categories/adventure.html"
+      }
+    ],
+    "duration": "8-12 hours (Main Story)",
+    "player_type": "Single Player",
+    "difficulty": "Hard",
+    "how_to_play": "在Celeste中，你的目标是帮助Madeline攀登Celeste山。你需要精确地掌握跳跃和冲刺技巧，避开障碍物，并在过程中收集草莓和其他物品。游戏分为多个章节，每个章节都有其独特的机制和挑战。如果你发现游戏太难，可以启用辅助模式，调整游戏参数使其更容易。",
+    "controls": [
+      {
+        "key": "方向键/WASD",
+        "action": "移动"
+      },
+      {
+        "key": "Z/C",
+        "action": "跳跃"
+      },
+      {
+        "key": "X/V",
+        "action": "冲刺"
+      },
+      {
+        "key": "G",
+        "action": "切换辅助模式"
+      }
+    ],
+    "features": [
+      "充满挑战性但公平的平台游戏设计",
+      "感人至深的故事情节，探讨焦虑和自我接纳的主题",
+      "精美的像素艺术风格和出色的动画",
+      "由Lena Raine创作的令人难忘的配乐",
+      "包含多个章节、B面和C面的丰富内容",
+      "可调整难度的辅助模式，让所有技能水平的玩家都能享受游戏",
+      "隐藏的收集品和秘密，提供额外的探索价值",
+      "2018年多项游戏奖项获得者，包括最佳独立游戏"
+    ],
+    "extra_sections": {
+      "tips": {
+        "title": "攀登技巧",
+        "content": "<p class=\"mb-3\">成功攀登Celeste山的建议:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>冲刺后你可以在接触地面或收集水晶前再次冲刺一次</li><li>墙壁跳跃时按住方向键可以滑下墙壁，延长攀爬时间</li><li>难度太大时不要犹豫使用辅助模式</li><li>尝试收集所有草莓以获得完整体验</li><li>B面和C面提供额外挑战，但需要先找到卡带</li><li>耐心很重要 - 有些关卡可能需要多次尝试才能通过</li></ul>"
+      },
+      "story": {
+        "title": "故事背景",
+        "content": "<p class=\"mb-6\">在《Celeste》中，主角Madeline决定攀登Celeste山作为一个个人挑战。她在旅程中遇到各种角色，包括一位名叫Theo的摄影师和一位经营废弃度假村的鬼魂Mr. Oshiro。</p><p class=\"mb-6\">游戏的核心主题围绕Madeline与她自己的另一面（游戏中称为Badeline）的斗争展开。这个另一面代表了她的焦虑、自我怀疑和抑郁。随着故事的发展，Madeline学会了不是与这些负面情绪战斗，而是接受它们作为自己的一部分。</p><p class=\"mb-6\">《Celeste》以其对心理健康问题的敏感处理而受到赞誉，通过游戏机制和叙事完美地结合了克服内心障碍的主题。</p>"
+      }
+    },
+    "why_play": "《Celeste》完美地结合了极具挑战性的游戏玩法和感人的叙事。游戏不仅测试你的反应能力和精确度，还讲述了一个关于自我接纳和克服内心障碍的感人故事。出色的音乐、精美的像素艺术和流畅的控制使其成为现代平台游戏的代表作。无论你是来挑战高难度游戏玩法，还是体验感人故事，《Celeste》都能给你留下深刻印象。",
+    "similar_games": [
+      {
+        "name": "Hollow Knight",
+        "slug": "hollow-knight",
+        "thumbnail": "/assets/images/games/hollow-knight-thumbnail.jpg",
+        "categories": "Metroidvania, Adventure"
+      },
+      {
+        "name": "Super Mario Bros",
+        "slug": "smb3",
+        "thumbnail": "/assets/images/games/smb3-thumbnail.jpg",
+        "categories": "Platform, Classic"
+      },
+      {
+        "name": "Slope",
+        "slug": "slope",
+        "thumbnail": "/assets/images/games/slope-thumbnail.jpg",
+        "categories": "Arcade, Casual"
+      }
+    ]
+  },
+  {
+    "name": "Hollow Knight",
+    "slug": "hollow-knight",
+    "description_short": "探索被遗忘的王国Hallownest，在这款备受赞誉的2D动作冒险游戏中与众多敌人战斗，解开古老的谜题。",
+    "description_full": "<p class=\"mb-6 text-lg\">《Hollow Knight》是一款由Team Cherry开发的2D动作冒险游戏，游戏设定在一个名为Hallownest的没落昆虫王国。玩家控制一个被称为骑士的无名主角，探索错综复杂的地下世界。</p><p class=\"mb-6 text-lg\">游戏结合了精确的战斗系统、丰富的探索元素和引人入胜的故事情节。随着玩家深入Hallownest，他们会解锁新能力，发现隐藏区域，击败强大的敌人和Boss，并逐渐揭开王国衰败背后的秘密。</p><p class=\"mb-6 text-lg\">《Hollow Knight》以其深度的游戏玩法、精美的手绘艺术风格和充满感染力的氛围而闻名，被许多人认为是独立游戏的代表作之一。</p>",
+    "iframe_url": "https://blackoutgames.netlify.app/games/hallow.html",
+    "thumbnail": "/assets/images/games/hollow-knight-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Metroidvania",
+        "url": "/categories/metroidvania.html"
+      },
+      {
+        "name": "Action",
+        "url": "/categories/action.html"
+      },
+      {
+        "name": "Adventure",
+        "url": "/categories/adventure.html"
+      }
+    ],
+    "duration": "30-40 hours (Main Story)",
+    "player_type": "Single Player",
+    "difficulty": "Medium to Hard",
+    "how_to_play": "在《Hollow Knight》中，你控制一个被称为骑士的角色，探索Hallownest王国。你需要掌握战斗技巧，包括使用骑士的钉子（主要武器）进行攻击、闪避敌人攻击和使用法术。游戏采用开放世界结构，允许玩家以多种顺序探索，但某些区域需要特定能力才能访问。击败敌人和Boss会获得Geo（游戏货币）和灵魂（用于恢复生命和施放法术）。",
+    "controls": [
+      {
+        "key": "方向键/WASD",
+        "action": "移动"
+      },
+      {
+        "key": "Z/X/J",
+        "action": "攻击"
+      },
+      {
+        "key": "C/K",
+        "action": "法术/聚焦"
+      },
+      {
+        "key": "Space/Alt",
+        "action": "冲刺"
+      },
+      {
+        "key": "Tab/I",
+        "action": "地图"
+      },
+      {
+        "key": "A/LB",
+        "action": "梦境之钉"
+      }
+    ],
+    "features": [
+      "精美手绘的艺术风格和动画",
+      "广阔的互联世界，充满秘密和隐藏区域",
+      "超过30个Boss战和150种敌人",
+      "深度的战斗系统，结合近战攻击和法术",
+      "独特的护符系统，允许定制游戏风格",
+      "引人入胜的叙事，通过环境讲述故事",
+      "Christopher Larkin创作的大气原声音乐",
+      "多个DLC包含的额外内容和挑战",
+      "多种结局，鼓励多次游玩"
+    ],
+    "extra_sections": {
+      "tips": {
+        "title": "探索技巧",
+        "content": "<p class=\"mb-3\">成功探索Hallownest的建议:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>经常使用你的地图和指南针护符找路</li><li>收集游魂可以恢复灵魂能量</li><li>使用长钉护符增加攻击范围</li><li>探索每个区域的边缘寻找隐藏房间</li><li>在开始新的Boss战前先升级你的钉子</li><li>不要忘记护符的组合效果</li><li>使用梦境之钉获取更多灵魂和解锁隐藏内容</li></ul>"
+      },
+      "lore": {
+        "title": "世界背景",
+        "content": "<p class=\"mb-6\">Hallownest曾是一个繁荣的昆虫王国，由一位被称为苍白之王的强大存在统治。然而，一种被称为感染的神秘疾病开始蔓延，导致王国的衰败。</p><p class=\"mb-6\">为了遏制感染，苍白之王创造了被称为容器的生物，设计用来封印感染的源头 - 一个被称为光辉的古老存在。游戏的主角，骑士，就是这些容器中的一个，回到已经没落的Hallownest寻找真相。</p><p class=\"mb-6\">游戏的故事通过环境叙事、NPC对话和梦境序列慢慢展开，玩家需要拼凑线索来理解这个复杂的世界。</p>"
+      }
+    },
+    "why_play": "《Hollow Knight》是一款精心制作的游戏，为玩家提供一个充满魅力和神秘感的世界。游戏平衡了挑战性和可访问性，战斗系统既深刻又有趣，探索充满奖励。精美的艺术风格、动人的音乐和扣人心弦的故事使Hallownest成为一个令人难忘的游戏世界。如果你喜欢探索、挑战和沉浸式的游戏体验，《Hollow Knight》绝对不容错过。",
+    "similar_games": [
+      {
+        "name": "Celeste",
+        "slug": "celeste",
+        "thumbnail": "/assets/images/games/celeste-thumbnail.jpg",
+        "categories": "Platform, Adventure"
+      },
+      {
+        "name": "Super Mario World",
+        "slug": "world",
+        "thumbnail": "/assets/images/games/world-thumbnail.jpg",
+        "categories": "Platform, Adventure"
+      },
+      {
+        "name": "Cookie Clicker",
+        "slug": "cookie",
+        "thumbnail": "/assets/images/games/cookie-thumbnail.jpg",
+        "categories": "Casual, Idle"
+      }
+    ]
+  },
+  {
+    "name": "Slope",
+    "slug": "slope",
+    "description_short": "一款极具挑战性的3D无尽跑酷游戏，控制一个球体高速下滑，测试你的反应能力和技巧。",
+    "description_full": "<p class=\"mb-6 text-lg\">《Slope》是一款令人肾上腺素飙升的3D无尽跑酷游戏，由Y8 Studio开发。游戏的概念简单而上瘾：控制一个球体在不断变化的倾斜跑道上高速滚动，尽可能地走得更远。</p><p class=\"mb-6 text-lg\">游戏速度随着你的进展而不断加快，增加了挑战的难度。随着速度的增加，你需要更快的反应时间来避开障碍物并保持在轨道上。跑道两侧没有护栏，一个微小的转向错误就可能导致坠落。</p><p class=\"mb-6 text-lg\">《Slope》以其简单的游戏机制、霓虹美学和令人上瘾的再来一次特性而闻名，成为了休闲游戏中的经典之作。</p>",
+    "iframe_url": "https://blackoutgames.netlify.app/games/slope.html",
+    "thumbnail": "/assets/images/games/slope-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Arcade",
+        "url": "/categories/arcade.html"
+      },
+      {
+        "name": "Casual",
+        "url": "/categories/casual.html"
+      },
+      {
+        "name": "Skill",
+        "url": "/categories/skill.html"
+      }
+    ],
+    "duration": "2-5 min per run",
+    "player_type": "Single Player",
+    "difficulty": "Easy to learn, hard to master",
+    "how_to_play": "在《Slope》中，你的目标是控制一个球体在下坡跑道上滚动，尽可能地走得更远而不掉落或撞到障碍物。使用左右方向键或A/D键控制球体的方向。游戏速度会随着你的进展而逐渐增加，测试你的反应能力和精确度。记住，没有检查点 - 一旦你坠落或撞击，就必须从头开始。尝试打破自己的最高分！",
+    "controls": [
+      {
+        "key": "左右方向键",
+        "action": "控制球体方向"
+      },
+      {
+        "key": "A/D键",
+        "action": "控制球体方向（替代）"
+      }
+    ],
+    "features": [
+      "简单直接的游戏玩法 - 易于学习，难以掌握",
+      "随游戏进程不断增加的速度和难度",
+      "流畅的3D图形和霓虹风格的视觉效果",
+      "无尽的程序生成轨道",
+      "实时分数跟踪和高分榜",
+      "快节奏的游戏体验，完美适合快速游戏",
+      "对反应能力和空间感知的极限测试",
+      "无需下载，直接在浏览器中玩"
+    ],
+    "extra_sections": {
+      "tips": {
+        "title": "高分技巧",
+        "content": "<p class=\"mb-3\">在《Slope》中获得高分的建议:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>保持在轨道中央 - 这样你有更多时间对即将到来的转弯做出反应</li><li>轻点控制 - 小而精确的移动比急转弯更有效</li><li>预测前方 - 尽可能远地看前方的轨道</li><li>专注和保持冷静 - 当速度增加时，保持冷静是关键</li><li>学习模式 - 轨道虽然是随机生成的，但某些模式会重复出现</li><li>定期练习 - 像任何技巧游戏一样，练习可以提高你的反应时间和控制能力</li></ul>"
+      }
+    },
+    "why_play": "《Slope》提供了一种纯粹、原始的游戏体验，专注于速度感和精确控制。它的简单学习，难以掌握的特性使其成为各种技能水平玩家的理想选择。霓虹美学和快节奏的游戏性创造了一种令人愉悦的紧张感，让你想要一次又一次地尝试打破自己的记录。如果你想在短时间内获得紧张刺激的游戏体验，《Slope》是完美的选择。",
+    "similar_games": [
+      {
+        "name": "Super Smash Flash",
+        "slug": "supersmash",
+        "thumbnail": "/assets/images/games/supersmash-thumbnail.jpg",
+        "categories": "Fighting, Multiplayer"
+      },
+      {
+        "name": "Minecraft Classic",
+        "slug": "mc",
+        "thumbnail": "/assets/images/games/mc-thumbnail.jpg",
+        "categories": "Sandbox, Adventure"
+      },
+      {
+        "name": "Mario Kart",
+        "slug": "mariokart",
+        "thumbnail": "/assets/images/games/mariokart-thumbnail.jpg",
+        "categories": "Racing, Multiplayer"
+      }
+    ]
+  },
+  {
+    "name": "Minecraft Classic",
+    "slug": "minecraft-classic",
+    "description_short": "体验原始版本的Minecraft，在这款创造性的沙盒游戏中建造、探索和创造你自己的方块世界。",
+    "description_full": "<p class=\"mb-6 text-lg\">《Minecraft Classic》是备受喜爱的沙盒游戏Minecraft的原始版本，提供了游戏最基础的体验。在这个版本中，玩家可以使用各种方块在3D世界中进行创建和建造，没有生存模式的限制和威胁。</p><p class=\"mb-6 text-lg\">尽管没有现代版本的复杂功能，但Classic版本完美保留了游戏的核心魅力：无限制的创造力和自由探索。玩家可以搭建各种结构，从简单的小屋到宏伟的城堡，发挥想象力创建自己独特的世界。</p>",
+    "iframe_url": "https://blackoutgames.netlify.app/games/mc.html",
+    "thumbnail": "/assets/images/games/minecraft-classic-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Sandbox",
+        "url": "/categories/sandbox.html"
+      },
+      {
+        "name": "Creative",
+        "url": "/categories/creative.html"
+      }
+    ],
+    "duration": "无限制",
+    "player_type": "Single Player",
+    "difficulty": "Easy",
+    "how_to_play": "在《Minecraft Classic》中，目标由你自己设定。你可以在一个由各种方块组成的3D世界中自由建造和探索。使用鼠标和键盘选择方块并放置或移除它们。没有生存模式的限制，所以你可以完全专注于创造性建造。通过组合不同类型的方块，你可以创建复杂的结构、艺术品或整个城市。",
+    "controls": [
+      {
+        "key": "W/A/S/D",
+        "action": "移动"
+      },
+      {
+        "key": "空格键",
+        "action": "跳跃"
+      },
+      {
+        "key": "左键点击",
+        "action": "放置方块"
+      },
+      {
+        "key": "右键点击",
+        "action": "移除方块"
+      },
+      {
+        "key": "数字键1-9",
+        "action": "选择方块类型"
+      }
+    ],
+    "features": [
+      "简单但上瘾的方块建造机制",
+      "32种不同类型的方块可供使用",
+      "无限的创造性自由",
+      "3D世界探索",
+      "为现代Minecraft奠定了基础的经典玩法",
+      "怀旧的像素图形风格",
+      "没有生存元素的纯创造性体验"
+    ],
+    "extra_sections": {
+      "history": {
+        "title": "游戏历史",
+        "content": "<p class=\"mb-6\">《Minecraft Classic》是Notch (Markus Persson) 在2009年开发的Minecraft最早的公开版本之一。这个版本奠定了后来成为全球现象的游戏的基础，展示了游戏的核心理念：在一个由方块组成的世界中自由创造。</p><p class=\"mb-6\">虽然现代版本的Minecraft已经添加了大量内容，包括生存模式、战斗、红石机制、多样化的生物群系和RPG元素，但Classic版本提供了一种回归游戏根源的方式，让玩家体验最纯粹的Minecraft创造体验。</p>"
+      },
+      "build_tips": {
+        "title": "建造技巧",
+        "content": "<p class=\"mb-3\">开始你的Minecraft创造之旅的一些建议:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>从小处着手，逐步扩展你的建筑</li><li>尝试混合不同类型的方块创造纹理和视觉多样性</li><li>使用纸和笔或图形软件提前规划复杂的建筑</li><li>利用对称性创造美观的设计</li><li>不要害怕拆除和重建 - 实验是建造过程的一部分</li><li>观察现实世界的建筑获取灵感</li></ul>"
+      }
+    },
+    "why_play": "《Minecraft Classic》提供了一种纯粹、无干扰的创造体验，让你可以完全专注于建造和探索。没有饥饿、怪物或死亡的威胁，你可以自由地发挥创造力，设计和构建任何你能想象的东西。对于怀旧的玩家，这是重温Minecraft早期魅力的机会；对于新玩家，这是了解这款影响深远的游戏起源的理想方式。如果你喜欢建造、设计或只是在方块世界中放松，Classic版本提供了简单而令人满足的游戏体验。",
+    "similar_games": [
+      {
+        "name": "Minecraft 2D版本",
+        "slug": "mc2",
+        "thumbnail": "/assets/images/games/mc2-thumbnail.jpg",
+        "categories": "Sandbox, 2D"
+      },
+      {
+        "name": "Roblox",
+        "slug": "roblox",
+        "thumbnail": "/assets/images/games/roblox-thumbnail.jpg",
+        "categories": "Sandbox, Multiplayer"
+      },
+      {
+        "name": "Terraria",
+        "slug": "terraria",
+        "thumbnail": "/assets/images/games/terraria-thumbnail.jpg",
+        "categories": "Sandbox, Adventure"
+      }
+    ]
+  }
+] 

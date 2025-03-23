@@ -1,0 +1,182 @@
+[
+  {
+    "name": "太空探险",
+    "slug": "space-adventure",
+    "description_short": "探索未知宇宙，与外星文明交流，在这款刺激的太空探险游戏中成为伟大的宇航员。",
+    "description_full": "<p class=\"mb-6 text-lg\">《太空探险》是一款令人兴奋的太空探索游戏，玩家将踏上探索未知宇宙的旅程，发现新的行星和文明。游戏结合了探索、资源管理和战略决策，为玩家提供了沉浸式的太空冒险体验。</p><p class=\"mb-6 text-lg\">在游戏中，玩家将扮演一名勇敢的宇航员，驾驶飞船穿越星系，探索异星，与外星文明互动，收集稀有资源，并解开宇宙中的各种谜团。每个星球都有其独特的环境、生物和挑战，需要玩家运用不同的策略和工具来应对。</p>",
+    "iframe_url": "https://example.com/games/space-adventure",
+    "thumbnail": "/assets/images/games/space-adventure-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Adventure",
+        "url": "/categories/adventure.html"
+      },
+      {
+        "name": "Strategy",
+        "url": "/categories/strategy.html"
+      }
+    ],
+    "duration": "10-30 min per session",
+    "player_type": "Single Player",
+    "difficulty": "Medium",
+    "how_to_play": "使用键盘和鼠标控制您的宇航员和飞船。探索星球，收集资源，解决谜题，与外星生物交流。您需要管理氧气和燃料等资源，确保能够安全返回基地。游戏目标是探索尽可能多的星球并解开宇宙的秘密。",
+    "controls": [
+      {
+        "key": "WASD",
+        "action": "移动宇航员"
+      },
+      {
+        "key": "Space",
+        "action": "跳跃"
+      },
+      {
+        "key": "E",
+        "action": "交互/收集"
+      },
+      {
+        "key": "1-5",
+        "action": "切换工具"
+      },
+      {
+        "key": "F",
+        "action": "开启手电筒"
+      },
+      {
+        "key": "M",
+        "action": "查看地图"
+      }
+    ],
+    "features": [
+      "探索超过20个独特的外星球",
+      "与各种外星文明互动",
+      "收集和利用稀有太空资源",
+      "升级您的宇航服和装备",
+      "解开宇宙起源的秘密",
+      "逼真的太空环境和物理效果",
+      "丰富的故事情节和支线任务"
+    ],
+    "extra_sections": {
+      "tips": {
+        "title": "太空探险小贴士",
+        "content": "<p class=\"mb-3\">以下是一些帮助您成为成功的宇航员的建议:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>始终监控氧气和燃料水平</li><li>首先探索资源丰富的行星</li><li>与友好的外星种族建立贸易关系</li><li>记录并分析发现的新物种</li><li>在危险环境中使用防护装备</li><li>定期返回基地补充物资</li></ul>"
+      },
+      "story": {
+        "title": "背景故事",
+        "content": "<p class=\"mb-6\">2157年，人类首次接收到来自深空的神秘信号。这一发现引发了一场全球性的太空探索热潮。作为新一代宇航员培训计划的一部分，你被选中驾驶最先进的探索飞船前往信号源所在的星系。</p><p class=\"mb-6\">当你抵达目的地时，你发现这里不仅有一个，而是有多个外星文明存在。有些友好，有些充满敌意。更令人惊讶的是，他们似乎都在寻找同一样东西——一种能够解开宇宙起源秘密的远古神器。</p><p class=\"mb-6\">你的使命已经从简单的探索变成了一场跨越星系的寻宝之旅。你能在竞争对手之前找到这件神器吗？而更重要的是，一旦找到，你会如何使用它的力量？</p>"
+      }
+    },
+    "why_play": "《太空探险》将带您进入一个充满未知和奇迹的宇宙。凭借其独特的探索机制、引人入胜的故事情节和精美的视觉效果，这款游戏为太空探索爱好者提供了一次难忘的冒险。无论您是喜欢解谜、收集资源还是享受宏大叙事，这款游戏都能满足您的需求。",
+    "similar_games": [
+      {
+        "name": "星际漫游",
+        "slug": "starwanderer",
+        "thumbnail": "/assets/images/games/starwanderer-thumbnail.jpg",
+        "categories": "Adventure, Sci-Fi"
+      },
+      {
+        "name": "银河指挥官",
+        "slug": "galaxy-commander",
+        "thumbnail": "/assets/images/games/galaxy-commander-thumbnail.jpg",
+        "categories": "Strategy, Simulation"
+      },
+      {
+        "name": "外星探索者",
+        "slug": "alien-explorer",
+        "thumbnail": "/assets/images/games/alien-explorer-thumbnail.jpg",
+        "categories": "Adventure, Action"
+      }
+    ]
+  },
+  {
+    "name": "忍者武士",
+    "slug": "ninja-warrior",
+    "description_short": "成为传奇忍者，掌握武术技能，在这款动作丰富的平台游戏中挑战各种敌人和关卡。",
+    "description_full": "<p class=\"mb-6 text-lg\">《忍者武士》是一款充满动作元素的平台游戏，玩家将扮演一名技艺高超的忍者，穿越古代日本的各种环境，对抗敌人，完成任务。游戏融合了传统忍者元素和现代游戏机制，为玩家提供刺激的体验。</p><p class=\"mb-6 text-lg\">在游戏中，玩家需要利用忍者的敏捷性和各种武器技能，克服陷阱，打败敌人，完成每个关卡设定的目标。随着游戏的进行，玩家可以解锁新的技能和装备，提升自己的战斗能力，应对越来越具有挑战性的关卡。</p>",
+    "iframe_url": "https://example.com/games/ninja-warrior",
+    "thumbnail": "/assets/images/games/ninja-warrior-thumbnail.jpg",
+    "categories": [
+      {
+        "name": "Action",
+        "url": "/categories/action.html"
+      },
+      {
+        "name": "Platform",
+        "url": "/categories/platform.html"
+      }
+    ],
+    "duration": "5-15 min per level",
+    "player_type": "Single Player",
+    "difficulty": "Medium to Hard",
+    "how_to_play": "使用键盘控制忍者的移动和攻击。完成每个关卡的目标，可能是击败所有敌人、收集特定物品或到达特定地点。注意避开陷阱，有效利用隐蔽点，并灵活运用各种忍者技能。随着游戏的进行，你将解锁更多高级技能和武器。",
+    "controls": [
+      {
+        "key": "方向键/WASD",
+        "action": "移动"
+      },
+      {
+        "key": "Space",
+        "action": "跳跃"
+      },
+      {
+        "key": "J",
+        "action": "普通攻击"
+      },
+      {
+        "key": "K",
+        "action": "特殊攻击"
+      },
+      {
+        "key": "L",
+        "action": "使用道具"
+      },
+      {
+        "key": "Shift",
+        "action": "冲刺"
+      },
+      {
+        "key": "Ctrl",
+        "action": "隐身模式"
+      }
+    ],
+    "features": [
+      "30个具有挑战性的关卡",
+      "多种忍者武器和技能",
+      "逼真的物理效果和动画",
+      "精美的古代日本风格场景",
+      "丰富的敌人类型和Boss战",
+      "技能升级系统",
+      "隐藏收集品和彩蛋"
+    ],
+    "extra_sections": {
+      "tips": {
+        "title": "忍者秘籍",
+        "content": "<p class=\"mb-3\">成为一名成功的忍者武士需要技巧和耐心:</p><ul class=\"list-disc pl-6 mb-6 space-y-1\"><li>利用隐身技能避开强大的敌人</li><li>收集所有卷轴以解锁隐藏技能</li><li>注意环境线索，寻找隐藏通道</li><li>使用墙跳技巧到达高处</li><li>保存特殊攻击能量用于Boss战</li><li>学习每种敌人的攻击模式</li></ul>"
+      },
+      "skills": {
+        "title": "忍者技能树",
+        "content": "<p class=\"mb-6\">《忍者武士》提供了丰富的技能升级系统:</p><div class=\"bg-apple-gray p-4 rounded-lg mb-4\"><h4 class=\"font-bold mb-2\">武器技能</h4><ul class=\"list-disc pl-6\"><li>手里剑投掷</li><li>双刀技术</li><li>链镰技术</li></ul></div><div class=\"bg-apple-gray p-4 rounded-lg mb-4\"><h4 class=\"font-bold mb-2\">移动技能</h4><ul class=\"list-disc pl-6\"><li>墙壁奔跑</li><li>二段跳</li><li>高速冲刺</li></ul></div><div class=\"bg-apple-gray p-4 rounded-lg\"><h4 class=\"font-bold mb-2\">忍术</h4><ul class=\"list-disc pl-6\"><li>影分身术</li><li>替身术</li><li>火遁忍术</li></ul></div>"
+      }
+    },
+    "why_play": "《忍者武士》将传统忍者元素与现代游戏玩法完美融合，为动作游戏爱好者提供极具挑战性的体验。精美的画面、流畅的动作和丰富的技能系统让每一关都充满新鲜感。如果你喜欢动作平台游戏并向往成为一名真正的忍者大师，这款游戏绝对不容错过。",
+    "similar_games": [
+      {
+        "name": "武士之道",
+        "slug": "way-of-samurai",
+        "thumbnail": "/assets/images/games/way-of-samurai-thumbnail.jpg",
+        "categories": "Action, Adventure"
+      },
+      {
+        "name": "暗影刺客",
+        "slug": "shadow-assassin",
+        "thumbnail": "/assets/images/games/shadow-assassin-thumbnail.jpg",
+        "categories": "Action, Stealth"
+      },
+      {
+        "name": "跳跃忍者",
+        "slug": "jump-ninja",
+        "thumbnail": "/assets/images/games/jump-ninja-thumbnail.jpg",
+        "categories": "Platform, Casual"
+      }
+    ]
+  }
+] 
