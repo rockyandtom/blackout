@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vex 7 - Blackout游戏平台</title>
-    <meta name="description" content="具有挑战性的跑酷游戏，躲避陷阱，通过关卡。">
+    <title>Vex 7 - GameHub Platform</title>
+    <meta name="description" content="Challenging runner game. Avoid traps and complete levels.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
@@ -33,7 +33,7 @@
             position: relative;
             overflow: hidden;
             width: 100%;
-            padding-top: 56.25%; /* 16:9 宽高比 */
+            padding-top: 56.25%; /* 16:9 aspect ratio */
         }
         .game-iframe {
             position: absolute;
@@ -48,110 +48,110 @@
     </style>
 </head>
 <body class="min-h-screen">
-    <!-- 导航栏 -->
+    <!-- Navigation Bar -->
     <nav class="bg-gray-900 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="/" class="text-xl font-bold text-white">Blackout</a>
+                        <a href="/" class="text-xl font-bold text-white">GameHub</a>
                     </div>
                     <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
-                        <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">首页</a>
-                        <a href="/categories/all.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">分类</a>
-                        <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">关于我们</a>
+                        <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/categories/all.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Categories</a>
+                        <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- 游戏内容 -->
+    <!-- Game Content -->
     <main class="py-8">
         <div class="game-container mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- 游戏标题和信息 -->
+            <!-- Game Title and Info -->
             <div class="mb-8">
                 <h1 class="text-3xl font-bold text-white mb-2">Vex 7</h1>
-                <p class="text-gray-400">开发者: VexGames | 发布日期: 2022-08-20</p>
+                <p class="text-gray-400">Developer: VexGames | Release Date: 2022-08-20</p>
             </div>
             
-            <!-- 游戏iframe -->
+            <!-- Game iframe -->
             <div class="mb-12">
                 <div class="game-iframe-container rounded-xl shadow-2xl overflow-hidden">
-                    <iframe src="https://www.gameflare.com/embed/vex-7/" class="game-iframe" allowfullscreen></iframe>
+                    <iframe src="https://html5.gamedistribution.com/rvvASMiM/af69e96c900a42aaa4fbb5c1ffe1746a/index.html" class="game-iframe" allowfullscreen allow="fullscreen; autoplay; encrypted-media"></iframe>
                 </div>
             </div>
             
-            <!-- 游戏控制区 -->
+            <!-- Game Controls -->
             <div class="mb-12 bg-gray-800 rounded-xl p-6 shadow-lg flex flex-wrap justify-between items-center">
                 <div class="flex items-center space-x-4 mb-4 md:mb-0">
                     <button class="btn-primary py-2 px-6 rounded-lg font-medium shadow-md flex items-center" onclick="document.querySelector('.game-iframe').requestFullscreen()">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
                         </svg>
-                        全屏模式
+                        Fullscreen
                     </button>
                     <button class="btn-primary py-2 px-6 rounded-lg font-medium shadow-md flex items-center" onclick="location.reload()">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                         </svg>
-                        重新开始
+                        Restart
                     </button>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <span class="text-gray-300">热度:</span>
-                    <span class="text-white font-medium">{{playCount}} 次游戏</span>
+                    <span class="text-gray-300">Popularity:</span>
+                    <span class="text-white font-medium">{{playCount}} plays</span>
                 </div>
             </div>
             
-            <!-- 游戏信息区 -->
+            <!-- Game Information -->
             <div class="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white">游戏信息</h2>
+                    <h2 class="text-xl font-semibold mb-4 text-white">Game Info</h2>
                     <div class="space-y-4">
                         <div>
-                            <h3 class="text-gray-400 text-sm">类别</h3>
-                            <p class="text-white">跑酷</p>
+                            <h3 class="text-gray-400 text-sm">Category</h3>
+                            <p class="text-white">Runner</p>
                         </div>
                         <div>
-                            <h3 class="text-gray-400 text-sm">平台</h3>
+                            <h3 class="text-gray-400 text-sm">Platform</h3>
                             <p class="text-white">HTML5</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white">游戏描述</h2>
-                    <p class="text-gray-300">具有挑战性的跑酷游戏，躲避陷阱，通过关卡。</p>
+                    <h2 class="text-xl font-semibold mb-4 text-white">Description</h2>
+                    <p class="text-gray-300">Challenging runner game. Avoid traps and complete levels.</p>
                 </div>
                 
                 <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white">标签</h2>
+                    <h2 class="text-xl font-semibold mb-4 text-white">Tags</h2>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag text-xs px-2 py-1 rounded-full">跑酷</span>
-<span class="tag text-xs px-2 py-1 rounded-full">挑战</span>
-<span class="tag text-xs px-2 py-1 rounded-full">技巧</span>
+                        <span class="tag text-xs px-2 py-1 rounded-full">Runner</span>
+<span class="tag text-xs px-2 py-1 rounded-full">Challenge</span>
+<span class="tag text-xs px-2 py-1 rounded-full">Skill</span>
 
                     </div>
                 </div>
             </div>
             
-            <!-- 相关游戏 -->
+            <!-- Related Games -->
             <div>
-                <h2 class="text-2xl font-semibold mb-6 text-white">相关游戏</h2>
+                <h2 class="text-2xl font-semibold mb-6 text-white">Related Games</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- 相关游戏将由生成脚本填充 -->
+                    <!-- Related games will be populated by generation script -->
                 </div>
             </div>
         </div>
     </main>
     
-    <!-- 页脚 -->
+    <!-- Footer -->
     <footer class="bg-gray-900 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <p class="text-gray-400">&copy; 2023 Blackout游戏平台. 保留所有权利.</p>
+                    <p class="text-gray-400">&copy; 2023 GameHub Platform. All rights reserved.</p>
                 </div>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white">
