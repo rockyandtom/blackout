@@ -29,6 +29,22 @@
             color: #a78bfa;
             border: 1px solid #7c3aed;
         }
+        .game-iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 宽高比 */
+        }
+        .game-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body class="min-h-screen">
@@ -53,67 +69,71 @@
     <!-- 游戏内容 -->
     <main class="py-8">
         <div class="game-container mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- 游戏标题和播放按钮 -->
-            <div class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center">
-                <div>
-                    <h1 class="text-3xl font-bold text-white mb-2">Celeste</h1>
-                    <p class="text-gray-400">开发者: Maddy Makes Games | 发布日期: 2022-01-25</p>
-                </div>
-                <a href="/games/celeste.html" class="mt-4 md:mt-0 btn-primary py-3 px-8 rounded-lg text-lg font-medium shadow-md flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    立即游戏
-                </a>
+            <!-- 游戏标题和信息 -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-white mb-2">Celeste</h1>
+                <p class="text-gray-400">开发者: MattMakesGames | 发布日期: 2023-06-05</p>
             </div>
             
-            <!-- 游戏截图和信息 -->
-            <div class="flex flex-col lg:flex-row mb-12">
-                <!-- 游戏截图 -->
-                <div class="w-full lg:w-2/3 mb-8 lg:mb-0 lg:pr-8">
-                    <div class="relative pb-9/16 w-full overflow-hidden rounded-xl shadow-2xl">
-                        <img src="/assets/images/games/celeste-thumbnail.jpg" alt="Celeste 游戏截图" class="absolute inset-0 w-full h-full object-cover">
-                    </div>
+            <!-- 游戏iframe -->
+            <div class="mb-12">
+                <div class="game-iframe-container rounded-xl shadow-2xl overflow-hidden">
+                    <iframe src="https://www.gameflare.com/embed/celeste-web/" class="game-iframe" allowfullscreen></iframe>
                 </div>
-                
-                <!-- 游戏信息 -->
-                <div class="w-full lg:w-1/3 bg-gray-800 rounded-xl p-6 shadow-lg">
+            </div>
+            
+            <!-- 游戏控制区 -->
+            <div class="mb-12 bg-gray-800 rounded-xl p-6 shadow-lg flex flex-wrap justify-between items-center">
+                <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                    <button class="btn-primary py-2 px-6 rounded-lg font-medium shadow-md flex items-center" onclick="document.querySelector('.game-iframe').requestFullscreen()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+                        </svg>
+                        全屏模式
+                    </button>
+                    <button class="btn-primary py-2 px-6 rounded-lg font-medium shadow-md flex items-center" onclick="location.reload()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                        重新开始
+                    </button>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-gray-300">热度:</span>
+                    <span class="text-white font-medium">{{playCount}} 次游戏</span>
+                </div>
+            </div>
+            
+            <!-- 游戏信息区 -->
+            <div class="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
                     <h2 class="text-xl font-semibold mb-4 text-white">游戏信息</h2>
-                    
                     <div class="space-y-4">
                         <div>
                             <h3 class="text-gray-400 text-sm">类别</h3>
                             <p class="text-white">平台</p>
                         </div>
-                        
                         <div>
                             <h3 class="text-gray-400 text-sm">平台</h3>
                             <p class="text-white">HTML5</p>
                         </div>
-                        
-                        <div>
-                            <h3 class="text-gray-400 text-sm">热度</h3>
-                            <p class="text-white">{{playCount}} 次游戏</p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-gray-400 text-sm">标签</h3>
-                            <div class="flex flex-wrap gap-2 mt-1">
-                                <span class="tag text-xs px-2 py-1 rounded-full">平台</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white">游戏描述</h2>
+                    <p class="text-gray-300">挑战性极高的像素平台游戏，攀登蔚蓝山。</p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white">标签</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag text-xs px-2 py-1 rounded-full">平台</span>
 <span class="tag text-xs px-2 py-1 rounded-full">像素</span>
 <span class="tag text-xs px-2 py-1 rounded-full">挑战</span>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- 游戏描述 -->
-            <div class="mb-12 bg-gray-800 rounded-xl p-8 shadow-lg">
-                <h2 class="text-2xl font-semibold mb-6 text-white">游戏描述</h2>
-                <p class="text-gray-300 text-lg leading-relaxed">挑战性极高的像素平台游戏，攀登蔚蓝山。</p>
             </div>
             
             <!-- 相关游戏 -->
