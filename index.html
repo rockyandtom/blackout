@@ -145,86 +145,344 @@
                 <h2 class="text-3xl font-bold">精选游戏</h2>
                 <a href="/games" class="text-apple-blue hover:underline">查看全部</a>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-8">
                 <!-- Blackout 游戏卡片 -->
-                <div class="game-card bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg" data-categories="action multiplayer">
-                    <a href="/games/blackout.html">
-                        <div class="game-thumbnail w-full h-48" data-game-name="Blackout">
-                            <img 
-                                src="/assets/images/games/blackout-thumbnail.jpg" 
-                                alt="Blackout" 
-                                class="w-full h-full object-cover"
-                                loading="lazy">
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/blackout.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Blackout 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
                         </div>
                         <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">Blackout</h3>
-                            <p class="text-apple-darkgray mb-3">Experience the thrill of survival in this fast-paced battle royale game.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Action</span>
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Multiplayer</span>
+                            <h3 class="text-lg font-semibold text-white mb-1">Blackout</h3>
+                            <p class="text-gray-400 text-sm mb-2">闯过黑暗迷宫，找到出口，躲避危险。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">冒险</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">休闲</span>
                             </div>
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- Fruit Game 游戏卡片 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                    <a href="/games/fruit.html">
-                        <div class="game-thumbnail w-full h-48" data-game-name="Fruit Game">
-                            <img 
-                                src="/assets/images/games/fruit-thumbnail.jpg" 
-                                alt="Fruit Game" 
-                                class="w-full h-full object-cover"
-                                loading="lazy">
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/fruit-game.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/fruit-thumbnail.jpg" alt="Fruit Game 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
                         </div>
                         <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">Fruit Game</h3>
-                            <p class="text-apple-darkgray mb-3">A colorful and addictive puzzle game with juicy graphics and challenging levels.</p>
-                            <div class="flex items-center">
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded mr-2">Puzzle</span>
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Casual</span>
+                            <h3 class="text-lg font-semibold text-white mb-1">Fruit Game</h3>
+                            <p class="text-gray-400 text-sm mb-2">切水果休闲游戏，快速反应，得分越高！</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">休闲</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">益智</span>
                             </div>
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- Super Mario Clone 游戏卡片 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                    <a href="/games/smc.html">
-                        <div class="game-thumbnail w-full h-48" data-game-name="Super Mario Clone">
-                            <img 
-                                src="/assets/images/games/smc-thumbnail.jpg" 
-                                alt="Super Mario Clone" 
-                                class="w-full h-full object-cover"
-                                loading="lazy">
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/super-mario-clone.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/smc-thumbnail.jpg" alt="Super Mario Clone 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
                         </div>
                         <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">Super Mario Clone</h3>
-                            <p class="text-apple-darkgray mb-3">A nostalgic platform adventure inspired by the classic. Jump, run, and collect coins!</p>
-                            <div class="flex items-center">
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded mr-2">Adventure</span>
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Platform</span>
+                            <h3 class="text-lg font-semibold text-white mb-1">Super Mario Clone</h3>
+                            <p class="text-gray-400 text-sm mb-2">经典横版冒险游戏，跳跃、收集金币、打败敌人。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">冒险</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">横版</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Metro Runner 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/metro-runner.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/metro-thumbnail.jpg" alt="Metro Runner 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Metro Runner</h3>
+                            <p class="text-gray-400 text-sm mb-2">快节奏跑酷游戏，躲避障碍物，收集道具。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">跑酷</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">动作</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Celeste 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/celeste.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/celeste-thumbnail.jpg" alt="Celeste 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Celeste</h3>
+                            <p class="text-gray-400 text-sm mb-2">挑战性极高的像素平台游戏，攀登蔚蓝山。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">平台</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">像素</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hollow Knight 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/hollow-knight.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/hollow-knight-thumbnail.jpg" alt="Hollow Knight 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Hollow Knight</h3>
+                            <p class="text-gray-400 text-sm mb-2">探索废墟王国，发现秘密，与敌人战斗。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">冒险</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">探索</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Slope 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/slope.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/slope-thumbnail.jpg" alt="Slope 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Slope</h3>
+                            <p class="text-gray-400 text-sm mb-2">控制小球沿着3D斜坡滚动，避开障碍物。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">休闲</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">3D</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Minecraft 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/minecraft.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/mc-thumbnail.jpg" alt="Minecraft 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Minecraft</h3>
+                            <p class="text-gray-400 text-sm mb-2">创建、探索、生存在方块构成的世界中。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">沙盒</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">建造</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 新添加的游戏卡片 -->
+                <!-- Super Smash Bros 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/super-smash-bros.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/supersmash-thumbnail.jpg" alt="Super Smash Bros 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Super Smash Bros</h3>
+                            <p class="text-gray-400 text-sm mb-2">多人战斗游戏，使用经典角色互相对战。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">格斗</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">多人</span>
                             </div>
                         </div>
                     </a>
                 </div>
                 
-                <!-- Metro Runner 游戏卡片 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                    <a href="/games/metro.html">
-                        <div class="game-thumbnail w-full h-48" data-game-name="Metro Runner">
-                            <img 
-                                src="/assets/images/games/metro-thumbnail.jpg" 
-                                alt="Metro Runner" 
-                                class="w-full h-full object-cover"
-                                loading="lazy">
+                <!-- Minecraft Classic 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/minecraft-classic.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/mc2-thumbnail.jpg" alt="Minecraft Classic 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
                         </div>
                         <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">Metro Runner</h3>
-                            <p class="text-apple-darkgray mb-3">An exciting urban adventure set in a subway system. Navigate through trains and tunnels!</p>
-                            <div class="flex items-center">
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded mr-2">Action</span>
-                                <span class="bg-apple-gray text-sm px-2 py-1 rounded">Runner</span>
+                            <h3 class="text-lg font-semibold text-white mb-1">Minecraft Classic</h3>
+                            <p class="text-gray-400 text-sm mb-2">经典版Minecraft，纯净的沙盒建造体验。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">沙盒</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">经典</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Mario Boom 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/mario-boom.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/marioboom-thumbnail.jpg" alt="Mario Boom 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Mario Boom</h3>
+                            <p class="text-gray-400 text-sm mb-2">马里奥爆炸冒险，收集炸弹，打败敌人。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">动作</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">冒险</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Mario Kart 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/mario-kart.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/mariokart-thumbnail.jpg" alt="Mario Kart 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Mario Kart</h3>
+                            <p class="text-gray-400 text-sm mb-2">刺激的马里奥赛车游戏，使用道具，超越对手。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">赛车</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">竞速</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Super Mario Bros 3 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/super-mario-bros-3.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Super Mario Bros 3 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Super Mario Bros 3</h3>
+                            <p class="text-gray-400 text-sm mb-2">经典的马里奥冒险游戏，穿越8个世界拯救公主。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">冒险</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">平台</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- More Bots Than TF2 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/more-bots.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/morebots-thumbnail.jpg" alt="More Bots Than TF2 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">More Bots Than TF2</h3>
+                            <p class="text-gray-400 text-sm mb-2">机器人对战游戏，组建团队，击败敌方机器人。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">射击</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">团队</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Cookie Clicker 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/cookie-clicker.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/cookie-thumbnail.jpg" alt="Cookie Clicker 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Cookie Clicker</h3>
+                            <p class="text-gray-400 text-sm mb-2">极具上瘾性的放置类游戏，点击饼干，解锁升级。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">休闲</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">放置</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 其余游戏使用默认缩略图 -->
+                <!-- Bald 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/bald.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Bald 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Bald</h3>
+                            <p class="text-gray-400 text-sm mb-2">恐怖冒险游戏，在诡异的学校中逃离光头校长。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">恐怖</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">冒险</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Vex 7 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/vex-7.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Vex 7 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Vex 7</h3>
+                            <p class="text-gray-400 text-sm mb-2">具有挑战性的跑酷游戏，躲避陷阱，通过关卡。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">跑酷</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">挑战</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Volleyball 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/volleyball.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Volleyball 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Volleyball</h3>
+                            <p class="text-gray-400 text-sm mb-2">有趣的排球竞技游戏，享受沙滩排球的乐趣。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">体育</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">竞技</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Soccer 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/soccer.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Soccer 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">Soccer</h3>
+                            <p class="text-gray-400 text-sm mb-2">模拟足球比赛，射门得分，成为足球明星。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">体育</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">足球</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- World Adventure 游戏卡片 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <a href="/games/world-adventure.html" class="block">
+                        <div class="relative pb-9/16 overflow-hidden">
+                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="World Adventure 游戏" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white mb-1">World Adventure</h3>
+                            <p class="text-gray-400 text-sm mb-2">环游世界的冒险游戏，探索不同国家，收集宝藏。</p>
+                            <div class="flex">
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">冒险</span>
+                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">探索</span>
                             </div>
                         </div>
                     </a>
@@ -276,59 +534,34 @@
                 <a href="/games" class="text-apple-blue hover:underline">View All</a>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- Metro Runner -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                    <a href="/games/metro.html">
-                        <div class="game-thumbnail h-36" data-game-name="Metro Runner">
-                            <img src="/assets/images/games/metro-thumbnail.jpg" alt="Metro Runner" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-3">
-                            <h3 class="font-bold">Metro Runner</h3>
-                            <span class="text-sm text-apple-darkgray">Action, Runner</span>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Super Mario Clone -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                    <a href="/games/smc.html">
-                        <div class="game-thumbnail h-36" data-game-name="Super Mario Clone">
-                            <img src="/assets/images/games/smc-thumbnail.jpg" alt="Super Mario Clone" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-3">
-                            <h3 class="font-bold">Super Mario Clone</h3>
-                            <span class="text-sm text-apple-darkgray">Adventure, Platform</span>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Fruit Game -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                    <a href="/games/fruit.html">
-                        <div class="game-thumbnail h-36" data-game-name="Fruit Game">
-                            <img src="/assets/images/games/fruit-thumbnail.jpg" alt="Fruit Game" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-3">
-                            <h3 class="font-bold">Fruit Game</h3>
-                            <span class="text-sm text-apple-darkgray">Puzzle, Casual</span>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Blackout -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                    <a href="/games/blackout.html">
-                        <div class="game-thumbnail h-36" data-game-name="Blackout">
-                            <img src="/assets/images/games/blackout-thumbnail.jpg" alt="Blackout" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-3">
-                            <h3 class="font-bold">Blackout</h3>
-                            <span class="text-sm text-apple-darkgray">Action, Battle Royale</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+
+<!-- 太空探险 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+    <a href="/games/space-adventure.html">
+        <div class="game-thumbnail h-36" data-game-name="太空探险">
+            <img src="/assets/images/games/space-adventure-thumbnail.jpg" alt="太空探险" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+            <h3 class="font-bold">太空探险</h3>
+            <span class="text-sm text-apple-darkgray">Adventure, Strategy</span>
+        </div>
+    </a>
+</div>
+
+<!-- 忍者武士 -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+    <a href="/games/ninja-warrior.html">
+        <div class="game-thumbnail h-36" data-game-name="忍者武士">
+            <img src="/assets/images/games/ninja-warrior-thumbnail.jpg" alt="忍者武士" class="w-full h-full object-cover">
+        </div>
+        <div class="p-3">
+            <h3 class="font-bold">忍者武士</h3>
+            <span class="text-sm text-apple-darkgray">Action, Platform</span>
+        </div>
+    </a>
+</div>
+</div>
+</section>
     </main>
 
     <!-- Footer -->
