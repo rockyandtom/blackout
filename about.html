@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GameHub</title>
+    <meta name="description" content="Learn more about GameHub, our mission to provide free online games, and the team behind the platform.">
+    <link rel="canonical" href="https://gamehub.online/about.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHP9EM7S29"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WHP9EM7S29');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#0071e3',
+                            gray: '#f5f5f7',
+                            darkgray: '#86868b',
+                            black: '#1d1d1f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-apple-black">
+    <!-- Header -->
+    <header class="bg-apple-gray py-6 sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-semibold">GameHub</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/" class="hover:text-apple-blue transition py-2">Home</a>
+                    
+                    <!-- Categories Dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-apple-blue transition py-2">
+                            Categories
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+                            <div class="py-1">
+                                <a href="/categories/action.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Action Games</a>
+                                <a href="/categories/adventure.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Adventure Games</a>
+                                <a href="/categories/strategy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Strategy Games</a>
+                                <a href="/categories/casual.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Casual Games</a>
+                                <a href="/categories/multiplayer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-apple-gray hover:text-apple-blue">Multiplayer Games</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/games.html" class="hover:text-apple-blue transition py-2">All Games</a>
+                    <a href="/about.html" class="text-apple-blue transition py-2">About</a>
+                    <a href="/contact.html" class="hover:text-apple-blue transition py-2">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 pb-2">
+                <a href="/" class="block py-2 hover:text-apple-blue transition">Home</a>
+                <div class="mobile-submenu">
+                    <button class="flex items-center justify-between w-full py-2 hover:text-apple-blue transition">
+                        Categories
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="mobile-submenu-content hidden pl-4 border-l-2 border-apple-gray mt-1">
+                        <a href="/categories/action.html" class="block py-2 hover:text-apple-blue transition">Action Games</a>
+                        <a href="/categories/adventure.html" class="block py-2 hover:text-apple-blue transition">Adventure Games</a>
+                        <a href="/categories/strategy.html" class="block py-2 hover:text-apple-blue transition">Strategy Games</a>
+                        <a href="/categories/casual.html" class="block py-2 hover:text-apple-blue transition">Casual Games</a>
+                        <a href="/categories/multiplayer.html" class="block py-2 hover:text-apple-blue transition">Multiplayer Games</a>
+                    </div>
+                </div>
+                <a href="/games.html" class="block py-2 hover:text-apple-blue transition">All Games</a>
+                <a href="/about.html" class="block py-2 text-apple-blue transition">About</a>
+                <a href="/contact.html" class="block py-2 hover:text-apple-blue transition">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <section class="bg-apple-gray rounded-xl p-8 mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <h1 class="text-4xl font-bold mb-4">About GameHub</h1>
+                    <p class="text-xl text-apple-darkgray mb-6">Your go-to platform for free, browser-based online games. Play anytime, anywhere, without downloads or installations.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-48 w-48 mx-auto text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Story Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="p-8">
+                    <p class="text-lg mb-4">GameHub was founded in 2023 with a simple mission: to make gaming accessible to everyone, everywhere. We believe that great games shouldn't be limited by hardware requirements, costly downloads, or complicated installations.</p>
+                    <p class="text-lg mb-4">Our team of passionate gamers and developers curates a collection of high-quality browser-based games that you can play instantly. Whether you're looking for a quick gaming break during work, something to play on your commute, or just want to have fun without the hassle, GameHub is designed for you.</p>
+                    <p class="text-lg">We're constantly adding new games to our platform and improving the user experience to make sure that GameHub remains your favorite destination for online gaming.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Mission Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-apple-gray rounded-lg p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mb-4 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Accessibility</h3>
+                    <p class="text-apple-darkgray">Make gaming accessible to everyone, regardless of device, location, or technical expertise.</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mb-4 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Quality</h3>
+                    <p class="text-apple-darkgray">Curate a collection of high-quality games that offer engaging gameplay and enjoyable experiences.</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mb-4 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Community</h3>
+                    <p class="text-apple-darkgray">Build a positive gaming community where players of all skill levels can connect and have fun together.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Why Choose GameHub?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold mb-2">Free to Play</h3>
+                        <p class="text-apple-darkgray">All games on GameHub are completely free to play. No subscriptions, no hidden fees.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold mb-2">No Downloads</h3>
+                        <p class="text-apple-darkgray">Play instantly in your browser without downloading or installing anything.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold mb-2">Variety of Games</h3>
+                        <p class="text-apple-darkgray">From action and adventure to puzzles and strategy, we have games for every taste.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                        <p class="text-apple-darkgray">Our games are optimized for both desktop and mobile devices, so you can play anywhere.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold mb-2">Regular Updates</h3>
+                        <p class="text-apple-darkgray">We're constantly adding new games to our collection to keep the experience fresh and exciting.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold mb-2">User-Friendly Interface</h3>
+                        <p class="text-apple-darkgray">Easy navigation and clean design make finding and playing games a breeze.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="bg-apple-blue text-white rounded-xl p-8 text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Ready to Start Playing?</h2>
+            <p class="text-xl mb-6 max-w-xl mx-auto">Dive into our collection of free online games and start having fun right now. No sign-ups, no downloads, just play!</p>
+            <a href="/games.html" class="inline-block bg-white text-apple-blue font-semibold px-8 py-3 rounded-lg hover:bg-opacity-90 transition">Browse Games</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-apple-black text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">GameHub</h3>
+                    <p class="text-apple-darkgray max-w-md">Your destination for free online games that you can play anytime, anywhere, without downloads or installations.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/games.html" class="text-apple-darkgray hover:text-white transition">More Games</a></li>
+                        <li><a href="/privacy.html" class="text-apple-darkgray hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="text-apple-darkgray hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="/contact.html" class="text-apple-darkgray hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-apple-darkgray">
+                <p>&copy; 2023 GameHub.online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Mobile submenu toggle
+        document.querySelector('.mobile-submenu button').addEventListener('click', function() {
+            document.querySelector('.mobile-submenu-content').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
