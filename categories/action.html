@@ -130,7 +130,7 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
                     <h1 class="text-4xl font-bold mb-4">Action Games</h1>
-                    <p class="text-xl text-apple-darkgray mb-6">Experience high-energy gameplay with our collection of action games. Test your reflexes and skills with fast-paced challenges.</p>
+                    <p class="text-xl text-apple-darkgray mb-6">Experience the best action games online!</p>
                 </div>
                 <div class="md:w-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-48 w-48 mx-auto text-apple-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -143,41 +143,39 @@
         <!-- Games Grid -->
         <section class="mb-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-                <!-- Fruit Ninja Game Card -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
-                    <a href="/games/fruit-ninja.html" class="block">
-                        <div class="relative pb-9/16 overflow-hidden">
-                            <img src="/assets/images/games/fruit-thumbnail.jpg" alt="Fruit Ninja" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-white mb-1">Fruit Ninja</h3>
-                            <p class="text-gray-400 text-sm mb-2">Slice fruits in this addictive arcade game. Fast reactions lead to higher scores!</p>
-                            <div class="flex">
-                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Casual</span>
-                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">Action</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Super Smash Bros Game Card -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
-                    <a href="/games/super-smash-bros.html" class="block">
-                        <div class="relative pb-9/16 overflow-hidden">
-                            <img src="/assets/images/games/supersmash-thumbnail.jpg" alt="Super Smash Bros" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-white mb-1">Super Smash Bros</h3>
-                            <p class="text-gray-400 text-sm mb-2">Multiplayer fighting game. Battle with classic characters against each other in epic arenas.</p>
-                            <div class="flex">
-                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Fighting</span>
-                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">Action</span>
-                            </div>
-                        </div>
-                    </a>
+    <!-- Fruit Ninja Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="casual action reflexes casual">
+        <a href="/games/fruit-ninja.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/fruit-thumbnail.jpg" alt="Fruit Ninja" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Fruit Ninja</h3>
+                <p class="text-gray-400 text-sm mb-2">Slice fruits in this addictive arcade game. Fast reactions lead to higher scores!</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Casual</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Action</span>
                 </div>
             </div>
-        </section>
+        </a>
+    </div>
+    
+    <!-- Mario Combat Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="fighting mario action fighting">
+        <a href="/games/mario-combat.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/marioboom-thumbnail.jpg" alt="Mario Combat" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Mario Combat</h3>
+                <p class="text-gray-400 text-sm mb-2">Battle as characters from the Mario universe in this action-packed fighting game.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Fighting</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Mario</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+</section>
     </main>
 
     <!-- Footer -->

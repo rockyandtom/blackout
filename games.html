@@ -161,92 +161,199 @@
         <!-- Games Grid -->
         <section class="mb-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" id="games-grid">
-                <!-- Fruit Ninja Game Card -->
-                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="action casual">
-                    <a href="/games/fruit-ninja.html" class="block">
-                        <div class="relative pb-9/16 overflow-hidden">
-                            <img src="/assets/images/games/fruit-ninja-thumbnail.jpg" alt="Fruit Ninja" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-white mb-1">Fruit Ninja</h3>
-                            <p class="text-gray-400 text-sm mb-2">Slice fruits and avoid bombs in this casual arcade game. Test your reflexes and aim for high scores.</p>
-                            <div class="flex">
-                                <span class="px-2 py-1 text-xs rounded-full bg-red-900 text-red-200 mr-2">Action</span>
-                                <span class="px-2 py-1 text-xs rounded-full bg-green-900 text-green-200">Casual</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Super Mario Construct Game Card -->
-                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="adventure">
-                    <a href="/games/super-mario-construct.html" class="block">
-                        <div class="relative pb-9/16 overflow-hidden">
-                            <img src="/assets/images/games/smc-thumbnail.jpg" alt="Super Mario Construct" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-white mb-1">Super Mario Construct</h3>
-                            <p class="text-gray-400 text-sm mb-2">Classic side-scrolling adventure game. Jump, collect coins, and defeat enemies.</p>
-                            <div class="flex">
-                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Adventure</span>
-                                <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200">Platformer</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Soccer Skills Game Card -->
-                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="multiplayer">
-                    <a href="/games/soccer-skills.html" class="block">
-                        <div class="relative pb-9/16 overflow-hidden">
-                            <img src="/assets/images/games/soccer-skills-thumbnail.jpg" alt="Soccer Skills" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-white mb-1">Soccer Skills</h3>
-                            <p class="text-gray-400 text-sm mb-2">Compete in online soccer matches, show off your skills, and climb the global leaderboards.</p>
-                            <div class="flex">
-                                <span class="px-2 py-1 text-xs rounded-full bg-yellow-900 text-yellow-200 mr-2">Multiplayer</span>
-                                <span class="px-2 py-1 text-xs rounded-full bg-yellow-900 text-yellow-200">Sports</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Cookie Clicker Game Card -->
-                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="strategy">
-                    <a href="/games/cookie-clicker.html" class="block">
-                        <div class="relative pb-9/16 overflow-hidden">
-                            <img src="/assets/images/games/cookie-thumbnail.jpg" alt="Cookie Clicker" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-white mb-1">Cookie Clicker</h3>
-                            <p class="text-gray-400 text-sm mb-2">Strategic resource management game. Click cookies, build an empire, and optimize your production.</p>
-                            <div class="flex">
-                                <span class="px-2 py-1 text-xs rounded-full bg-blue-900 text-blue-200 mr-2">Strategy</span>
-                                <span class="px-2 py-1 text-xs rounded-full bg-blue-900 text-blue-200">Idle</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Super Smash Bros Game Card -->
-                <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="action multiplayer">
-                    <a href="/games/super-smash-bros.html" class="block">
-                        <div class="relative pb-9/16 overflow-hidden">
-                            <img src="/assets/images/games/smash-bros-thumbnail.jpg" alt="Super Smash Bros" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold text-white mb-1">Super Smash Bros</h3>
-                            <p class="text-gray-400 text-sm mb-2">Battle it out with friends in this multiplayer fighting game. Choose your character and knock opponents off the stage.</p>
-                            <div class="flex">
-                                <span class="px-2 py-1 text-xs rounded-full bg-red-900 text-red-200 mr-2">Action</span>
-                                <span class="px-2 py-1 text-xs rounded-full bg-yellow-900 text-yellow-200">Multiplayer</span>
-                            </div>
-                        </div>
-                    </a>
+    <!-- Fruit Ninja Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="casual action reflexes casual">
+        <a href="/games/fruit-ninja.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/fruit-thumbnail.jpg" alt="Fruit Ninja" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Fruit Ninja</h3>
+                <p class="text-gray-400 text-sm mb-2">Slice fruits in this addictive arcade game. Fast reactions lead to higher scores!</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Casual</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Action</span>
                 </div>
             </div>
-        </section>
+        </a>
+    </div>
+    
+    <!-- Super Mario Construct Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="adventure platformer classic adventure">
+        <a href="/games/super-mario-construct.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/smc-thumbnail.jpg" alt="Super Mario Construct" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Super Mario Construct</h3>
+                <p class="text-gray-400 text-sm mb-2">Classic side-scrolling adventure game. Jump, collect coins, and defeat enemies.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Adventure</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Platformer</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Soccer Skills Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="sports soccer skill sports">
+        <a href="/games/soccer-skills.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/soccer-thumbnail.jpg" alt="Soccer Skills" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Soccer Skills</h3>
+                <p class="text-gray-400 text-sm mb-2">Show off your soccer skills in this fast-paced sports game. Score goals and become a soccer star!</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Sports</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Soccer</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Cookie Clicker Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="casual idle clicker casual">
+        <a href="/games/cookie-clicker.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/cookie-thumbnail.jpg" alt="Cookie Clicker" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Cookie Clicker</h3>
+                <p class="text-gray-400 text-sm mb-2">Addictive idle game. Click cookies and unlock upgrades to build your cookie empire.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Casual</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Idle</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Super Smash Bros Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="fighting multiplayer classic fighting">
+        <a href="/games/super-smash-bros.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/supersmash-thumbnail.jpg" alt="Super Smash Bros" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Super Smash Bros</h3>
+                <p class="text-gray-400 text-sm mb-2">Multiplayer fighting game. Battle with classic characters against each other in epic arenas.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Fighting</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Multiplayer</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Celeste Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="platformer adventure challenging platformer">
+        <a href="/games/celeste.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/celeste-thumbnail.jpg" alt="Celeste" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Celeste</h3>
+                <p class="text-gray-400 text-sm mb-2">Help Madeline survive her journey to the top of Celeste Mountain in this challenging platformer.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Platformer</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Adventure</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- The Secrets of Hallowland Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="adventure mystery exploration adventure">
+        <a href="/games/hallowland.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/hollow-knight-thumbnail.jpg" alt="The Secrets of Hallowland" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">The Secrets of Hallowland</h3>
+                <p class="text-gray-400 text-sm mb-2">Explore the mysterious world of Hallowland and uncover its secrets in this atmospheric adventure.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Adventure</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Mystery</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Slope Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="arcade 3d runner arcade">
+        <a href="/games/slope.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/slope-thumbnail.jpg" alt="Slope" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Slope</h3>
+                <p class="text-gray-400 text-sm mb-2">Test your reflexes in this fast-paced 3D running game. Avoid obstacles and see how far you can go!</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Arcade</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">3D</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Minecraft Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="sandbox survival building sandbox">
+        <a href="/games/minecraft.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/mc-thumbnail.jpg" alt="Minecraft" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Minecraft</h3>
+                <p class="text-gray-400 text-sm mb-2">Build, explore, and survive in a blocky, procedurally-generated 3D world with infinite terrain.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Sandbox</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Survival</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Minecraft Classic Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="sandbox creative classic sandbox">
+        <a href="/games/minecraft-classic.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/mc2-thumbnail.jpg" alt="Minecraft Classic" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Minecraft Classic</h3>
+                <p class="text-gray-400 text-sm mb-2">Experience the original Minecraft in your browser. Place blocks and build in creative mode.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Sandbox</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Creative</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Mario Combat Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="fighting mario action fighting">
+        <a href="/games/mario-combat.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/marioboom-thumbnail.jpg" alt="Mario Combat" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Mario Combat</h3>
+                <p class="text-gray-400 text-sm mb-2">Battle as characters from the Mario universe in this action-packed fighting game.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Fighting</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Mario</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Volley Random Game Card -->
+    <div class="game-card bg-gray-800 rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl" data-category="sports volleyball funny sports">
+        <a href="/games/volley-random.html" class="block">
+            <div class="relative pb-9/16 overflow-hidden">
+                <img src="/assets/images/games/mariokart-thumbnail.jpg" alt="Volley Random" class="absolute inset-0 h-full w-full object-cover transform hover:scale-105 transition duration-300">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-white mb-1">Volley Random</h3>
+                <p class="text-gray-400 text-sm mb-2">Play volleyball with random physics and unpredictable gameplay in this fun sports game.</p>
+                <div class="flex">
+                    <span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Sports</span><span class="px-2 py-1 text-xs rounded-full bg-purple-900 text-purple-200 mr-2">Volleyball</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+</section>
     </main>
 
     <!-- Footer -->

@@ -14,6 +14,7 @@ root_dir = os.path.dirname(current_dir)  # 项目根目录
 DOWNLOAD_SCRIPT = os.path.join(current_dir, "download_thumbnails.py")
 CREATE_MISSING_SCRIPT = os.path.join(current_dir, "create_missing_images.py")
 GAME_GENERATOR_SCRIPT = os.path.join(current_dir, "game_generator.py")
+CATEGORY_GENERATOR_SCRIPT = os.path.join(current_dir, "category_generator.py")
 
 def ensure_directory(directory):
     """确保目录存在"""
@@ -48,12 +49,14 @@ def main():
     print("1. 下载游戏缩略图")
     print("2. 检查和填充缺失的图片")
     print("3. 生成游戏页面")
+    print("4. 更新分类页面和所有游戏页面")
     print("="*60)
     print("开始执行...")
     
     # 确保必要的目录存在
     ensure_directory(os.path.join(root_dir, "games"))
     ensure_directory(os.path.join(root_dir, "assets", "images", "games"))
+    ensure_directory(os.path.join(root_dir, "categories"))
     
     # 运行下载缩略图脚本
     if not run_script(DOWNLOAD_SCRIPT, "下载游戏缩略图"):
@@ -68,6 +71,10 @@ def main():
     if not run_script(GAME_GENERATOR_SCRIPT, "生成游戏页面"):
         print("错误: 生成游戏页面失败")
         sys.exit(1)
+    
+    # 运行分类页面和所有游戏页面生成脚本
+    if not run_script(CATEGORY_GENERATOR_SCRIPT, "更新分类页面和所有游戏页面"):
+        print("警告: 分类页面和所有游戏页面更新可能不完整")
     
     print("\n"+"="*60)
     print("所有操作已完成!")
